@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/doceo/Core/Code/C++/OpenCore/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
