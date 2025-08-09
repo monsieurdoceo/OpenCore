@@ -234,12 +234,15 @@ OpenCore: /usr/lib/Scrt1.o \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
   /usr/lib/libxcb.so.1 \
-  CMakeFiles/OpenCore.dir/src/main.cpp.o
+  CMakeFiles/OpenCore.dir/src/main.cpp.o \
+  libglad.a
 
 
 /usr/lib/libmvec.so.1:
 
 /usr/lib/libm.so.6:
+
+libglad.a:
 
 /usr/lib/libc.so.6:
 

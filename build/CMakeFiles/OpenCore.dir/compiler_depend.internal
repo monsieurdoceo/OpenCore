@@ -237,4 +237,5 @@ OpenCore
  /usr/lib/libmvec.so.1
  /usr/lib/libxcb.so.1
  /home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles/OpenCore.dir/src/main.cpp.o
+ /home/doceo/Core/Code/C++/OpenCore/build/libglad.a
 
