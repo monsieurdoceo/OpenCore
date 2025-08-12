@@ -3,6 +3,7 @@ OpenCore: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/OpenCore.dir/src/main.cpp.o \
+  CMakeFiles/OpenCore.dir/src/shader.cpp.o \
   libglad.a \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/libGL.so \
@@ -47,6 +48,8 @@ OpenCore: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
 
 CMakeFiles/OpenCore.dir/src/main.cpp.o:
+
+CMakeFiles/OpenCore.dir/src/shader.cpp.o:
 
 libglad.a:
 

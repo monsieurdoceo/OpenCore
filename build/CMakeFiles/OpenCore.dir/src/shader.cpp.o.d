@@ -1,6 +1,7 @@
-CMakeFiles/OpenCore.dir/src/main.cpp.o: \
- /home/doceo/Core/Code/C++/OpenCore/src/main.cpp \
+CMakeFiles/OpenCore.dir/src/shader.cpp.o: \
+ /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp \
  /usr/include/stdc-predef.h \
+ /home/doceo/Core/Code/C++/OpenCore/src/shader.hpp \
  /home/doceo/Core/Code/C++/OpenCore/include/glad/glad.h \
  /home/doceo/Core/Code/C++/OpenCore/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h \
@@ -12,10 +13,7 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
- /home/doceo/Core/Code/C++/OpenCore/src/shader.hpp \
- /usr/include/c++/15.1.1/string \
+ /usr/include/bits/stdint-least.h /usr/include/c++/15.1.1/string \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -27,6 +25,7 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/c++/15.1.1/bits/postypes.h /usr/include/c++/15.1.1/cwchar \
  /usr/include/wchar.h /usr/include/bits/floatn.h \
  /usr/include/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
