@@ -11,9 +11,11 @@
 class Shader
 {
 private:
-	unsigned int m_ID;
+	unsigned int m_programID, m_vertexID, m_fragmentID;
 
-	std::string readShaderFile(const char* shaderPath);	
+	std::string readShaderFile(const char* shaderPath);
+        void checkError(unsigned int id, std::string type);
+	unsigned int createShader(GLenum shaderType, const char* shaderCode);	
 
 public:
 	Shader(const char* vertexPath, const char* fragmetPath);
