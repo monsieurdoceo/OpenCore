@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /sbin/cmake
+CMAKE_COMMAND = /usr/sbin/cmake
 
 # The command to remove a file.
-RM = /sbin/cmake -E rm -f
+RM = /usr/sbin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -113,7 +113,7 @@ OpenCore: CMakeFiles/OpenCore.dir/src/shader.cpp.o
 OpenCore: CMakeFiles/OpenCore.dir/build.make
 OpenCore: CMakeFiles/OpenCore.dir/compiler_depend.ts
 OpenCore: libglad.a
-OpenCore: /usr/lib/libglfw.so.3.4
+OpenCore: /usr/lib/libglfw.so.3.5
 OpenCore: /usr/lib/libGL.so
 OpenCore: CMakeFiles/OpenCore.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OpenCore"
