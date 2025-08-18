@@ -1,1 +1,1 @@
-/sbin/c++ -Wl,--dependency-file=CMakeFiles/OpenCore.dir/link.d CMakeFiles/OpenCore.dir/src/main.cpp.o CMakeFiles/OpenCore.dir/src/shader.cpp.o -o OpenCore  libglad.a /usr/lib/libglfw.so.3.4 /usr/lib/libGL.so /usr/lib/libglm.a
+/usr/sbin/c++ -Wl,--dependency-file=CMakeFiles/OpenCore.dir/link.d CMakeFiles/OpenCore.dir/src/main.cpp.o CMakeFiles/OpenCore.dir/src/shader.cpp.o CMakeFiles/OpenCore.dir/src/texture.cpp.o -o OpenCore  libglad.a /usr/lib/libglfw.so.3.4 /usr/lib/libGL.so /usr/lib/libglm.a

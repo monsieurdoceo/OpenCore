@@ -158,15 +158,9 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
  /usr/include/c++/15.2.1/iostream \
- /home/doceo/Core/Code/C++/OpenCore/src/stb_image.h \
- /usr/include/c++/15.2.1/stdlib.h /usr/include/string.h \
- /usr/include/strings.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/c++/15.2.1/math.h \
+ /home/doceo/Core/Code/C++/OpenCore/src/texture.hpp \
+ /home/doceo/Core/Code/C++/OpenCore/include/glm/glm.hpp \
+ /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/_fixes.hpp \
  /usr/include/c++/15.2.1/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -185,18 +179,17 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
- /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc /usr/include/assert.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
- /home/doceo/Core/Code/C++/OpenCore/include/glm/glm.hpp \
- /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/_fixes.hpp \
+ /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
- /usr/include/c++/15.2.1/cassert \
+ /usr/include/c++/15.2.1/cassert /usr/include/assert.h \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/../simd/platform.h \
  /usr/include/c++/15.2.1/cstdint /usr/include/c++/15.2.1/climits \
- /usr/include/c++/15.2.1/cfloat \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/c++/15.2.1/cfloat \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/fwd.hpp \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/qualifier.hpp \
@@ -385,5 +378,6 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/../gtc/../ext/vector_int1_sized.hpp \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
- /usr/include/c++/15.2.1/cstring \
+ /usr/include/c++/15.2.1/cstring /usr/include/string.h \
+ /usr/include/strings.h \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/type_ptr.inl

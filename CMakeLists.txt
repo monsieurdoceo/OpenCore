@@ -11,6 +11,7 @@ find_package(glm CONFIG REQUIRED)
 set(SRC_DIR 
     "src/main.cpp"
     "src/shader.cpp"
+    "src/texture.cpp"
 )
 
 add_executable(OpenCore ${SRC_DIR})

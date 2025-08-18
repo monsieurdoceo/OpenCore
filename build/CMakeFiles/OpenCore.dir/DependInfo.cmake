@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/doceo/Core/Code/C++/OpenCore/src/main.cpp" "CMakeFiles/OpenCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/main.cpp.o.d"
   "/home/doceo/Core/Code/C++/OpenCore/src/shader.cpp" "CMakeFiles/OpenCore.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/shader.cpp.o.d"
+  "/home/doceo/Core/Code/C++/OpenCore/src/texture.cpp" "CMakeFiles/OpenCore.dir/src/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/texture.cpp.o.d"
   "" "OpenCore" "gcc" "CMakeFiles/OpenCore.dir/link.d"
   )
 

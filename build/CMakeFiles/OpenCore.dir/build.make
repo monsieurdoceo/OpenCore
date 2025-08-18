@@ -76,40 +76,56 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: CMakeFiles/OpenCore.dir/flags.make
 CMakeFiles/OpenCore.dir/src/main.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/main.cpp
 CMakeFiles/OpenCore.dir/src/main.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OpenCore.dir/src/main.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/main.cpp.o -MF CMakeFiles/OpenCore.dir/src/main.cpp.o.d -o CMakeFiles/OpenCore.dir/src/main.cpp.o -c /home/doceo/Core/Code/C++/OpenCore/src/main.cpp
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/main.cpp.o -MF CMakeFiles/OpenCore.dir/src/main.cpp.o.d -o CMakeFiles/OpenCore.dir/src/main.cpp.o -c /home/doceo/Core/Code/C++/OpenCore/src/main.cpp
 
 CMakeFiles/OpenCore.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/main.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/main.cpp > CMakeFiles/OpenCore.dir/src/main.cpp.i
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/main.cpp > CMakeFiles/OpenCore.dir/src/main.cpp.i
 
 CMakeFiles/OpenCore.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/main.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/main.cpp -o CMakeFiles/OpenCore.dir/src/main.cpp.s
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/main.cpp -o CMakeFiles/OpenCore.dir/src/main.cpp.s
 
 CMakeFiles/OpenCore.dir/src/shader.cpp.o: CMakeFiles/OpenCore.dir/flags.make
 CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp
 CMakeFiles/OpenCore.dir/src/shader.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenCore.dir/src/shader.cpp.o"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/shader.cpp.o -MF CMakeFiles/OpenCore.dir/src/shader.cpp.o.d -o CMakeFiles/OpenCore.dir/src/shader.cpp.o -c /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/shader.cpp.o -MF CMakeFiles/OpenCore.dir/src/shader.cpp.o.d -o CMakeFiles/OpenCore.dir/src/shader.cpp.o -c /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp
 
 CMakeFiles/OpenCore.dir/src/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/shader.cpp.i"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp > CMakeFiles/OpenCore.dir/src/shader.cpp.i
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp > CMakeFiles/OpenCore.dir/src/shader.cpp.i
 
 CMakeFiles/OpenCore.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/shader.cpp.s"
-	/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp -o CMakeFiles/OpenCore.dir/src/shader.cpp.s
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp -o CMakeFiles/OpenCore.dir/src/shader.cpp.s
+
+CMakeFiles/OpenCore.dir/src/texture.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/texture.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/texture.cpp
+CMakeFiles/OpenCore.dir/src/texture.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenCore.dir/src/texture.cpp.o"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/texture.cpp.o -MF CMakeFiles/OpenCore.dir/src/texture.cpp.o.d -o CMakeFiles/OpenCore.dir/src/texture.cpp.o -c /home/doceo/Core/Code/C++/OpenCore/src/texture.cpp
+
+CMakeFiles/OpenCore.dir/src/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/texture.cpp.i"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/texture.cpp > CMakeFiles/OpenCore.dir/src/texture.cpp.i
+
+CMakeFiles/OpenCore.dir/src/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/texture.cpp.s"
+	/usr/sbin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/texture.cpp -o CMakeFiles/OpenCore.dir/src/texture.cpp.s
 
 # Object files for target OpenCore
 OpenCore_OBJECTS = \
 "CMakeFiles/OpenCore.dir/src/main.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/shader.cpp.o"
+"CMakeFiles/OpenCore.dir/src/shader.cpp.o" \
+"CMakeFiles/OpenCore.dir/src/texture.cpp.o"
 
 # External object files for target OpenCore
 OpenCore_EXTERNAL_OBJECTS =
 
 OpenCore: CMakeFiles/OpenCore.dir/src/main.cpp.o
 OpenCore: CMakeFiles/OpenCore.dir/src/shader.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/texture.cpp.o
 OpenCore: CMakeFiles/OpenCore.dir/build.make
 OpenCore: CMakeFiles/OpenCore.dir/compiler_depend.ts
 OpenCore: libglad.a
@@ -117,7 +133,7 @@ OpenCore: /usr/lib/libglfw.so.3.4
 OpenCore: /usr/lib/libGL.so
 OpenCore: /usr/lib/libglm.a
 OpenCore: CMakeFiles/OpenCore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable OpenCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OpenCore"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OpenCore.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

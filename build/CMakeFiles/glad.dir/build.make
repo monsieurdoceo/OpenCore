@@ -76,15 +76,15 @@ CMakeFiles/glad.dir/src/glad.c.o: CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/src/glad.c.o: /home/doceo/Core/Code/C++/OpenCore/src/glad.c
 CMakeFiles/glad.dir/src/glad.c.o: CMakeFiles/glad.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/src/glad.c.o"
-	/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/src/glad.c.o -MF CMakeFiles/glad.dir/src/glad.c.o.d -o CMakeFiles/glad.dir/src/glad.c.o -c /home/doceo/Core/Code/C++/OpenCore/src/glad.c
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/src/glad.c.o -MF CMakeFiles/glad.dir/src/glad.c.o.d -o CMakeFiles/glad.dir/src/glad.c.o -c /home/doceo/Core/Code/C++/OpenCore/src/glad.c
 
 CMakeFiles/glad.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/src/glad.c.i"
-	/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/glad.c > CMakeFiles/glad.dir/src/glad.c.i
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/glad.c > CMakeFiles/glad.dir/src/glad.c.i
 
 CMakeFiles/glad.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/src/glad.c.s"
-	/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/glad.c -o CMakeFiles/glad.dir/src/glad.c.s
+	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/glad.c -o CMakeFiles/glad.dir/src/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
