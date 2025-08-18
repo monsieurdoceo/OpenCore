@@ -5,8 +5,9 @@ OpenCore: \
   CMakeFiles/OpenCore.dir/src/main.cpp.o \
   CMakeFiles/OpenCore.dir/src/shader.cpp.o \
   libglad.a \
-  /usr/lib/libglfw.so.3.5 \
+  /usr/lib/libglfw.so.3.4 \
   /usr/lib/libGL.so \
+  /usr/lib/libglm.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -53,9 +54,11 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o:
 
 libglad.a:
 
-/usr/lib/libglfw.so.3.5:
+/usr/lib/libglfw.so.3.4:
 
 /usr/lib/libGL.so:
+
+/usr/lib/libglm.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so:
 
