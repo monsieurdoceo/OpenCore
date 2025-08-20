@@ -105,16 +105,36 @@ int main()
 		texture1.use(GL_TEXTURE0);
 		texture2.use(GL_TEXTURE1);
 
-		glBindVertexArray(VAO);
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-		
 		glm::mat4 trans = glm::mat4(1.0f);
 		trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
 		trans = glm::translate(trans, glm::vec3(0.6f, -0.6f, 0.0f));
-		trans = glm::rotate(trans, (float) glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+		trans = glm::rotate(trans, (float) -glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
 
 		unsigned int transformLoc = glGetUniformLocation(shader.getID(), "transform");
 		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+
+		glBindVertexArray(VAO);
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+		trans = glm::mat4(1.0f);
+		trans = glm::translate(trans, glm::vec3(-0.3f, 0.3f, 0.0f));
+		float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+		trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+
+		transformLoc = glGetUniformLocation(shader.getID(), "transform");
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
+
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		
+		trans = glm::mat4(1.0f);
+		trans = glm::translate(trans, glm::vec3(-0.3f, -0.3f, 0.0f));
+		scaleAmount = static_cast<float>(sin(glfwGetTime()));
+		trans = glm::scale(trans, glm::vec3(0.5f, scaleAmount, 0.5f));
+
+		transformLoc = glGetUniformLocation(shader.getID(), "transform");
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
+
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
