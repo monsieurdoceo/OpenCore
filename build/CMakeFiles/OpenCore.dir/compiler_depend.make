@@ -949,11 +949,25 @@ OpenCore: /usr/lib/Scrt1.o \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
   /usr/lib/libxcb.so.1 \
+  /usr/lib32/libGLX.so.0 \
+  /usr/lib32/libGLdispatch.so.0 \
+  /usr/lib32/libX11.so.6 \
+  /usr/lib32/libXau.so.6 \
+  /usr/lib32/libXdmcp.so.6 \
+  /usr/lib32/libxcb.so.1 \
   CMakeFiles/OpenCore.dir/src/main.cpp.o \
   CMakeFiles/OpenCore.dir/src/shader.cpp.o \
   CMakeFiles/OpenCore.dir/src/texture.cpp.o \
   libglad.a
 
+
+/usr/lib32/libxcb.so.1:
+
+/usr/lib32/libXau.so.6:
+
+/usr/lib32/libGLdispatch.so.0:
+
+/usr/lib32/libGLX.so.0:
 
 /usr/lib/libm.so.6:
 
@@ -1687,6 +1701,8 @@ libglad.a:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_float.hpp:
 
+/usr/lib32/libX11.so.6:
+
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_quat.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_float_precision.hpp:
@@ -1728,6 +1744,8 @@ libglad.a:
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_common.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_trigonometric.inl:
+
+/usr/lib32/libXdmcp.so.6:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool1.hpp:
 

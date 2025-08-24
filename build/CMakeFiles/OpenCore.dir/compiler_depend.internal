@@ -953,6 +953,12 @@ OpenCore
  /usr/lib/libm.so.6
  /usr/lib/libmvec.so.1
  /usr/lib/libxcb.so.1
+ /usr/lib32/libGLX.so.0
+ /usr/lib32/libGLdispatch.so.0
+ /usr/lib32/libX11.so.6
+ /usr/lib32/libXau.so.6
+ /usr/lib32/libXdmcp.so.6
+ /usr/lib32/libxcb.so.1
  /home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles/OpenCore.dir/src/main.cpp.o
  /home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles/OpenCore.dir/src/shader.cpp.o
  /home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles/OpenCore.dir/src/texture.cpp.o

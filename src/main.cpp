@@ -54,47 +54,73 @@ int main()
 		return -1;
 	}
 
+	glEnable(GL_DEPTH_TEST);
+
 	// Creating a shader
 	Shader shader("../res/shaders/vertex.vs", "../res/shaders/fragment.fs");
 
 	float vertices[] = {
-		 0.5f,  0.5f, 0.0f,  1.0f, 0.5f, 0.0f,  1.0f, 1.0f, // top right
-	         0.5f, -0.5f, 0.0f,  0.5f, 1.0f, 0.5f,  1.0f, 0.0f, // bottom right
-		-0.5f, -0.5f, 0.0f,  0.0f, 0.5f, 0.0f,  0.0f, 0.0f, // bottom left
-		-0.5f,  0.5f, 0.0f,  1.0f, 0.0f, 1.0f,  0.0f, 1.0f  // top left
-	};
-	unsigned int indices[] = {
-		0, 1, 3,
-		1, 2, 3
+    		-0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+     		 0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
+     	    	 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+     	 	 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+    		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+    		-0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+
+    		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+     		 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+     		 0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+     		 0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
+    		-0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
+    		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+
+	       	-0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+	       	-0.5f,  0.5f, -0.5f,  1.0f, 1.0f,	
+       		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+		-0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+ 		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+   		 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+   		 0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+   		 0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+     		 0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+     		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+
+   		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+     		 0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
+     		 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+     		 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
+    		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+    		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+
+    		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
+     		 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
+     		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+     		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+    		-0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
+    		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f
 	};
 
 	// Creating a VBO[Vertex Buffer Object], a VAO[Vertex Array Object] and a EBO[Element Buffer Object]
-	unsigned int VBO, VAO, EBO;
+	unsigned int VBO, VAO;
 	// Asign the VAO, VBO and EBO
 	glGenVertexArrays(1, &VAO);
 	glGenBuffers(1, &VBO);
-	glGenBuffers(1, &EBO);
 	glBindVertexArray(VAO);
 
 	// Binding the VBO buffer to the GPU
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-	// Binding the EBO buffer to the GPU
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 	
 	// Asign and creating a array pointer to the vertices
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) 0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*) 0);
 	glEnableVertexAttribArray(0);
 
 	// Asign and creating a array pointer to the color
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) (3 * sizeof(float)));
-	glEnableVertexAttribArray(1);
-
-	// Asign and creating a array pointer to the texture position
-	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) (6 * sizeof(float)));
-        glEnableVertexAttribArray(2);	
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*) (3 * sizeof(float)));
+	glEnableVertexAttribArray(1);	
 
 	// Unbind the VBO and VAO
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -118,44 +144,33 @@ int main()
 
 		// Clear the screen
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		// Asign the texture order
 		texture1.use(GL_TEXTURE0);
 		texture2.use(GL_TEXTURE1);
 
-		// Use GLM to make mathematical calculation to rotate the texture
-		glm::mat4 trans = glm::mat4(1.0f);
-		trans = glm::scale(trans, glm::vec3(0.5f, 0.5f, 0.5f));
-		trans = glm::translate(trans, glm::vec3(0.6f, -0.6f, 0.0f));
-		trans = glm::rotate(trans, (float) -glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
+		glm::mat4 model = glm::mat4(1.0f);
+		model = glm::rotate(model, (float) glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
 
-		unsigned int transformLoc = glGetUniformLocation(shader.getID(), "transform");
-		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+		glm::mat4 view = glm::mat4(1.0f);
+		view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+
+		glm::mat4 projection = glm::mat4(1.0f); 
+		projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+		
+		int modelLoc = glGetUniformLocation(shader.getID(), "model");
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+
+		int viewLoc = glGetUniformLocation(shader.getID(), "view");
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+
+		int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
+		glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
 		// Draw the element
 		glBindVertexArray(VAO);
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-		trans = glm::mat4(1.0f);
-		trans = glm::translate(trans, glm::vec3(-0.3f, 0.3f, 0.0f));
-		float scaleAmount = static_cast<float>(sin(glfwGetTime()));
-		trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
-
-		transformLoc = glGetUniformLocation(shader.getID(), "transform");
-		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
-
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-		
-		trans = glm::mat4(1.0f);
-		trans = glm::translate(trans, glm::vec3(-0.3f, -0.3f, 0.0f));
-		scaleAmount = static_cast<float>(sin(glfwGetTime()));
-		trans = glm::scale(trans, glm::vec3(0.5f, scaleAmount, 0.5f));
-
-		transformLoc = glGetUniformLocation(shader.getID(), "transform");
-		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
-
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 
 		// Get all events and register them on the window
 		glfwSwapBuffers(window);
@@ -165,7 +180,6 @@ int main()
 	// Free the ram and useless buffer and shader
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
-	glDeleteBuffers(1, &EBO);
 	shader.remove();
 
 	glfwTerminate();
