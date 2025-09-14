@@ -10,6 +10,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -22,6 +29,24 @@ void processInput(GLFWwindow* window)
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) 
 	{
 		glfwSetWindowShouldClose(window, true);
+	}
+
+	const float cameraSpeed = static_cast<float>(2.5 * deltaTime);
+	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
+	{
+		cameraPos += cameraSpeed * cameraFront;
+	}
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+	{
+		cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+	}
+	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
+	{
+		cameraPos -= cameraSpeed * cameraFront;
+	}
+	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
+	{
+		cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
 	}
 }
 
@@ -136,9 +161,32 @@ int main()
 	shader.setInt("texture1", 0);
 	shader.setInt("texture2", 1);
 
+	glm::vec3 cubePositions[] = {
+		glm::vec3( 0.0f,  0.0f,  0.0f), 
+   		glm::vec3( 2.0f,  5.0f, -15.0f), 
+    		glm::vec3(-1.5f, -2.2f, -2.5f),  
+    		glm::vec3(-3.8f, -2.0f, -12.3f),  
+    		glm::vec3( 2.4f, -0.4f, -3.5f),  
+    		glm::vec3(-1.7f,  3.0f, -7.5f),  
+    		glm::vec3( 1.3f, -2.0f, -2.5f),  
+    		glm::vec3( 1.5f,  2.0f, -2.5f), 
+    		glm::vec3( 1.5f,  0.2f, -1.5f), 
+    		glm::vec3(-1.3f,  1.0f, -1.5f)
+	};
+
+	glm::mat4 projection = glm::mat4(1.0f); 
+	projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+	int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
+	glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
+
 	// Run till the window close
 	while (!glfwWindowShouldClose(window))
 	{
+		// calculate Deltatime
+		float currentFrame = static_cast<float>(glfwGetTime());
+		deltaTime = currentFrame - lastFrame;
+		lastFrame = currentFrame;
+
 		// Register Input
 		processInput(window);
 
@@ -148,29 +196,32 @@ int main()
 
 		// Asign the texture order
 		texture1.use(GL_TEXTURE0);
-		texture2.use(GL_TEXTURE1);
-
-		glm::mat4 model = glm::mat4(1.0f);
-		model = glm::rotate(model, (float) glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
+		texture2.use(GL_TEXTURE1);	
 
 		glm::mat4 view = glm::mat4(1.0f);
-		view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-
-		glm::mat4 projection = glm::mat4(1.0f); 
-		projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+		view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 		
-		int modelLoc = glGetUniformLocation(shader.getID(), "model");
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-
 		int viewLoc = glGetUniformLocation(shader.getID(), "view");
-		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-
-		int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
-		glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
+	
 		// Draw the element
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		for (unsigned int i = 0; i < 10; i++)
+		{
+			glm::mat4 model = glm::mat4(1.0f);
+			model = glm::translate(model, cubePositions[i]);
+			float angle = 20.f * i;
+			if (i % 3 == 0)
+			{
+				angle = glfwGetTime() * 25.0f;
+			}
+
+			model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+			glUniformMatrix4fv(glGetUniformLocation(shader.getID(), "model"), 1, GL_FALSE, &model[0][0]);
+			
+			glDrawArrays(GL_TRIANGLES, 0, 36);
+		}
 
 		// Get all events and register them on the window
 		glfwSwapBuffers(window);
