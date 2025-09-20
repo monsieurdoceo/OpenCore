@@ -17,6 +17,13 @@ glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+bool firstMouse = true;
+float yaw = -90.f;
+float pitch = 0.f;
+float lastX = 800.0f / 2.0;
+float lastY = 600.0f / 2.0;
+float fov = 45.0f;
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -50,6 +57,43 @@ void processInput(GLFWwindow* window)
 	}
 }
 
+void mouse_callback(GLFWwindow* window, double xposIn, double yposIn);
+void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
+{
+	float xpos = static_cast<float>(xposIn);
+	float ypos = static_cast<float>(yposIn);
+
+	if (firstMouse)
+	{
+		lastX = xpos;
+		lastY = ypos;
+		firstMouse = false;
+	}
+
+	float xoffSet = xpos - lastX;
+	float yoffSet = lastY - ypos;
+	lastX = xpos;
+	lastY = ypos;
+
+	const float sensitivity = 0.1f;
+	xoffSet *= sensitivity;
+	yoffSet *= sensitivity;
+
+	yaw += xoffSet;
+	pitch += yoffSet;
+
+	if (pitch > 89.0f)
+		pitch = 89.0f;
+	if (pitch < -89.0f)
+		pitch = -89.0f;
+
+	glm::vec3 front;
+	front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+	front.y = sin(glm::radians(pitch));
+	front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+	cameraFront = glm::normalize(front);
+}
+
 int main()
 {
 	// Initialising glfw
@@ -80,6 +124,8 @@ int main()
 	}
 
 	glEnable(GL_DEPTH_TEST);
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	glfwSetCursorPosCallback(window, mouse_callback);
 
 	// Creating a shader
 	Shader shader("../res/shaders/vertex.vs", "../res/shaders/fragment.fs");
@@ -175,7 +221,7 @@ int main()
 	};
 
 	glm::mat4 projection = glm::mat4(1.0f); 
-	projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+	projection = glm::perspective(glm::radians(fov), 800.0f / 600.0f, 0.1f, 100.0f);
 	int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
 	glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
 
