@@ -3,6 +3,7 @@
 
 #include "shader.hpp"
 #include "texture.hpp"
+#include "camera.hpp"
 
 #include <iostream>
 
@@ -10,19 +11,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
-
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+float lastX = 800.0f / 2.0f;
+float lastY = 600.0f / 2.0f;
 bool firstMouse = true;
-float yaw = -90.f;
-float pitch = 0.f;
-float lastX = 800.0f / 2.0;
-float lastY = 600.0f / 2.0;
-float fov = 45.0f;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
@@ -38,22 +33,21 @@ void processInput(GLFWwindow* window)
 		glfwSetWindowShouldClose(window, true);
 	}
 
-	const float cameraSpeed = static_cast<float>(2.5 * deltaTime);
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 	{
-		cameraPos += cameraSpeed * cameraFront;
-	}
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-	{
-		cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+		camera.processKeyboard(FORWARD, deltaTime);
 	}
 	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
 	{
-		cameraPos -= cameraSpeed * cameraFront;
+		camera.processKeyboard(BACKWARD, deltaTime);
+	}
+	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
+	{
+		camera.processKeyboard(LEFT, deltaTime);
 	}
 	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 	{
-		cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+		camera.processKeyboard(RIGHT, deltaTime);
 	}
 }
 
@@ -79,19 +73,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 	xoffSet *= sensitivity;
 	yoffSet *= sensitivity;
 
-	yaw += xoffSet;
-	pitch += yoffSet;
-
-	if (pitch > 89.0f)
-		pitch = 89.0f;
-	if (pitch < -89.0f)
-		pitch = -89.0f;
-
-	glm::vec3 front;
-	front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
-	front.y = sin(glm::radians(pitch));
-	front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-	cameraFront = glm::normalize(front);
+	camera.processMouseMovement(xoffSet, yoffSet);
 }
 
 int main()
@@ -218,12 +200,7 @@ int main()
     		glm::vec3( 1.5f,  2.0f, -2.5f), 
     		glm::vec3( 1.5f,  0.2f, -1.5f), 
     		glm::vec3(-1.3f,  1.0f, -1.5f)
-	};
-
-	glm::mat4 projection = glm::mat4(1.0f); 
-	projection = glm::perspective(glm::radians(fov), 800.0f / 600.0f, 0.1f, 100.0f);
-	int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
-	glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
+	};	
 
 	// Run till the window close
 	while (!glfwWindowShouldClose(window))
@@ -242,11 +219,14 @@ int main()
 
 		// Asign the texture order
 		texture1.use(GL_TEXTURE0);
-		texture2.use(GL_TEXTURE1);	
+		texture2.use(GL_TEXTURE1);
 
-		glm::mat4 view = glm::mat4(1.0f);
-		view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-		
+		glm::mat4 projection = glm::mat4(1.0f); 
+		projection = glm::perspective(glm::radians(camera.getZoom()), 800.0f / 600.0f, 0.1f, 100.0f);
+		int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
+		glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
+
+		glm::mat4 view = camera.getViewMatrix();	
 		int viewLoc = glGetUniformLocation(shader.getID(), "view");
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
 	

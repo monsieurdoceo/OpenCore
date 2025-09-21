@@ -5,6 +5,7 @@ OpenCore: \
   CMakeFiles/OpenCore.dir/src/main.cpp.o \
   CMakeFiles/OpenCore.dir/src/shader.cpp.o \
   CMakeFiles/OpenCore.dir/src/texture.cpp.o \
+  CMakeFiles/OpenCore.dir/src/camera.cpp.o \
   libglad.a \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/libGL.so \
@@ -60,6 +61,8 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o:
 CMakeFiles/OpenCore.dir/src/shader.cpp.o:
 
 CMakeFiles/OpenCore.dir/src/texture.cpp.o:
+
+CMakeFiles/OpenCore.dir/src/camera.cpp.o:
 
 libglad.a:
 
