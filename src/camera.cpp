@@ -51,6 +51,8 @@ void Camera::processKeyboard(Camera_Movement direction, float deltaTime)
 	{
 		m_position += m_right * velocity;
 	}
+
+	//m_position.y = 0.0f; 
 }
 
 void Camera::processMouseMovement(float xoffSet, float yoffSet, GLboolean containPitch)

@@ -223,12 +223,10 @@ int main()
 
 		glm::mat4 projection = glm::mat4(1.0f); 
 		projection = glm::perspective(glm::radians(camera.getZoom()), 800.0f / 600.0f, 0.1f, 100.0f);
-		int projectionLoc = glGetUniformLocation(shader.getID(), "projection");
-		glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, &projection[0][0]);
+		shader.setMat4("projection", projection);
 
 		glm::mat4 view = camera.getViewMatrix();	
-		int viewLoc = glGetUniformLocation(shader.getID(), "view");
-		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
+		shader.setMat4("view", view);
 	
 		// Draw the element
 		glBindVertexArray(VAO);
@@ -244,8 +242,8 @@ int main()
 			}
 
 			model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-			glUniformMatrix4fv(glGetUniformLocation(shader.getID(), "model"), 1, GL_FALSE, &model[0][0]);
-			
+			shader.setMat4("model", model);
+
 			glDrawArrays(GL_TRIANGLES, 0, 36);
 		}
 
