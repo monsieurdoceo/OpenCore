@@ -4,12 +4,12 @@
 #include "shader.hpp"
 #include "texture.hpp"
 #include "camera.hpp"
+#include "time.hpp"
 
 #include <iostream>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
 
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
@@ -25,8 +25,8 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	glViewport(0, 0, width, height);
 }
 
-void processInput(GLFWwindow* window);
-void processInput(GLFWwindow* window)
+void processInput(GLFWwindow* window, Time time);
+void processInput(GLFWwindow* window, Time time)
 {
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) 
 	{
@@ -35,19 +35,19 @@ void processInput(GLFWwindow* window)
 
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 	{
-		camera.processKeyboard(FORWARD, deltaTime);
+		camera.processKeyboard(FORWARD, time.getDeltaTime());
 	}
 	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
 	{
-		camera.processKeyboard(BACKWARD, deltaTime);
+		camera.processKeyboard(BACKWARD, time.getDeltaTime());
 	}
 	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
 	{
-		camera.processKeyboard(LEFT, deltaTime);
+		camera.processKeyboard(LEFT, time.getDeltaTime());
 	}
 	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 	{
-		camera.processKeyboard(RIGHT, deltaTime);
+		camera.processKeyboard(RIGHT, time.getDeltaTime());
 	}
 }
 
@@ -200,18 +200,19 @@ int main()
     		glm::vec3( 1.5f,  2.0f, -2.5f), 
     		glm::vec3( 1.5f,  0.2f, -1.5f), 
     		glm::vec3(-1.3f,  1.0f, -1.5f)
-	};	
+	};
+
+	Time time;	
 
 	// Run till the window close
 	while (!glfwWindowShouldClose(window))
 	{
-		// calculate Deltatime
-		float currentFrame = static_cast<float>(glfwGetTime());
-		deltaTime = currentFrame - lastFrame;
-		lastFrame = currentFrame;
+		// Update Time
+		time.update();
+		time.getFramerate();
 
 		// Register Input
-		processInput(window);
+		processInput(window, time);
 
 		// Clear the screen
 		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);

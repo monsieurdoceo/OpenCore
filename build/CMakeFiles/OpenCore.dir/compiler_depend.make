@@ -427,46 +427,8 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/m
   /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_projection.inl \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_transform.hpp \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_transform.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_relational.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_relational.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_float.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_quat.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_quat.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_geometric.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_geometric.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_common.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_common.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_double.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_double_precision.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_float.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_float_precision.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_transform.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_transform.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_trigonometric.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_trigonometric.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool1.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool1_precision.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double1.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double1_precision.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float1.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float1_precision.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int1.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int1_sized.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_relational.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_relational.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint1.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint1_sized.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/epsilon.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/epsilon.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/quaternion.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/quaternion.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/vec1.hpp \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/matrix_transform.hpp \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/matrix_transform.inl \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/type_ptr.hpp \
-  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/type_ptr.inl \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/integer.hpp \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/mat2x2.hpp \
   /home/doceo/Core/Code/C++/OpenCore/include/glm/packing.hpp \
@@ -477,6 +439,7 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/m
   /home/doceo/Core/Code/C++/OpenCore/src/camera.hpp \
   /home/doceo/Core/Code/C++/OpenCore/src/shader.hpp \
   /home/doceo/Core/Code/C++/OpenCore/src/texture.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/src/time.hpp \
   /usr/include/GLFW/glfw3.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -641,7 +604,6 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/m
   /usr/include/c++/15.2.1/cstdint \
   /usr/include/c++/15.2.1/cstdio \
   /usr/include/c++/15.2.1/cstdlib \
-  /usr/include/c++/15.2.1/cstring \
   /usr/include/c++/15.2.1/cwchar \
   /usr/include/c++/15.2.1/cwctype \
   /usr/include/c++/15.2.1/debug/assertions.h \
@@ -718,8 +680,6 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/m
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/single_threaded.h \
@@ -737,6 +697,146 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/m
 CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/shader.cpp \
   /home/doceo/Core/Code/C++/OpenCore/include/KHR/khrplatform.h \
   /home/doceo/Core/Code/C++/OpenCore/include/glad/glad.h \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat2x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat2x3.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat2x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat2x4.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x2.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x3.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x4.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x2.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x3.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x4.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float2x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float2x3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float2x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float2x4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float3x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float3x2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float3x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float3x3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float3x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float3x4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float4x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float4x2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float4x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float4x3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float4x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float4x4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/common.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_vector_relational.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/vector_relational.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/_fixes.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/_vectorize.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/compute_common.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_common.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_exponential.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec1.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec1.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/exponential.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_geometric.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/geometric.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_matrix.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat2x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat2x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat3x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat3x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat3x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat4x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat4x3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat4x4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/matrix.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/compute_vector_relational.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat2x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat2x2.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec2.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec3.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_vec4.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/scalar_int_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/scalar_uint_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float2x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_float2x2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float2_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float3_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float4_precision.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int2_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int3_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int4_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint2_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint3_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint4.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint4_sized.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/simd/platform.h \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/_fixes.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_integer.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_packing.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_trigonometric.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/qualifier.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/setup.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_half.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_half.inl \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/fwd.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/glm.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/integer.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/mat2x2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/packing.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/trigonometric.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/vec2.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/vec3.hpp \
+  /home/doceo/Core/Code/C++/OpenCore/include/glm/vec4.hpp \
   /home/doceo/Core/Code/C++/OpenCore/src/shader.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -750,6 +850,7 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/asm/posix_types.h \
   /usr/include/asm/posix_types_64.h \
   /usr/include/asm/types.h \
+  /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
   /usr/include/bits/cpu-set.h \
@@ -758,9 +859,22 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -806,11 +920,13 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/bits/types/wint_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/c++/15.2.1/backward/binders.h \
   /usr/include/c++/15.2.1/bit \
   /usr/include/c++/15.2.1/bits/alloc_traits.h \
@@ -855,6 +971,7 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
+  /usr/include/c++/15.2.1/bits/specfun.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
@@ -872,11 +989,16 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
   /usr/include/c++/15.2.1/bits/utility.h \
   /usr/include/c++/15.2.1/bits/version.h \
+  /usr/include/c++/15.2.1/cassert \
   /usr/include/c++/15.2.1/cctype \
   /usr/include/c++/15.2.1/cerrno \
+  /usr/include/c++/15.2.1/cfloat \
+  /usr/include/c++/15.2.1/climits \
   /usr/include/c++/15.2.1/clocale \
+  /usr/include/c++/15.2.1/cmath \
   /usr/include/c++/15.2.1/concepts \
   /usr/include/c++/15.2.1/cstddef \
+  /usr/include/c++/15.2.1/cstdint \
   /usr/include/c++/15.2.1/cstdio \
   /usr/include/c++/15.2.1/cstdlib \
   /usr/include/c++/15.2.1/cwchar \
@@ -895,6 +1017,7 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/c++/15.2.1/iosfwd \
   /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
+  /usr/include/c++/15.2.1/limits \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/ostream \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
@@ -904,6 +1027,18 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/c++/15.2.1/string \
   /usr/include/c++/15.2.1/string_view \
   /usr/include/c++/15.2.1/system_error \
+  /usr/include/c++/15.2.1/tr1/bessel_function.tcc \
+  /usr/include/c++/15.2.1/tr1/beta_function.tcc \
+  /usr/include/c++/15.2.1/tr1/ell_integral.tcc \
+  /usr/include/c++/15.2.1/tr1/exp_integral.tcc \
+  /usr/include/c++/15.2.1/tr1/gamma.tcc \
+  /usr/include/c++/15.2.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/15.2.1/tr1/legendre_function.tcc \
+  /usr/include/c++/15.2.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/15.2.1/tr1/special_function_util.h \
   /usr/include/c++/15.2.1/tuple \
   /usr/include/c++/15.2.1/type_traits \
   /usr/include/c++/15.2.1/typeinfo \
@@ -927,12 +1062,15 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
@@ -946,9 +1084,12 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
 CMakeFiles/OpenCore.dir/src/texture.cpp.o: /home/doceo/Core/Code/C++/OpenCore/src/texture.cpp \
   /home/doceo/Core/Code/C++/OpenCore/include/KHR/khrplatform.h \
@@ -1246,13 +1387,23 @@ CMakeFiles/OpenCore.dir/src/camera.cpp.o:
 
 /usr/lib32/libxcb.so.1:
 
+/usr/lib32/libXdmcp.so.6:
+
 /usr/lib32/libXau.so.6:
+
+/usr/lib32/libX11.so.6:
 
 /usr/lib32/libGLdispatch.so.0:
 
 /usr/lib32/libGLX.so.0:
 
 /usr/lib/libm.so.6:
+
+/usr/lib/libglfw.so.3.4:
+
+/usr/lib/libc_nonshared.a:
+
+/usr/lib/libc.so.6:
 
 /usr/lib/libXdmcp.so.6:
 
@@ -1301,6 +1452,8 @@ CMakeFiles/OpenCore.dir/src/camera.cpp.o:
 /usr/include/linux/stddef.h:
 
 /usr/include/linux/sched/types.h:
+
+/usr/include/linux/errno.h:
 
 /usr/include/ctype.h:
 
@@ -1406,6 +1559,10 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o:
 
 /usr/include/c++/15.2.1/bits/alloc_traits.h:
 
+/usr/include/c++/15.2.1/cctype:
+
+/usr/include/c++/15.2.1/backward/binders.h:
+
 /usr/include/bits/wctype-wchar.h:
 
 /usr/include/bits/types/wint_t.h:
@@ -1419,6 +1576,8 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o:
 /usr/include/bits/types/mbstate_t.h:
 
 /usr/include/bits/types/error_t.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/bits/types/__fpos64_t.h:
 
@@ -1446,85 +1605,17 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o:
 
 /usr/include/asm-generic/posix_types.h:
 
+/usr/include/asm-generic/errno.h:
+
 /usr/include/c++/15.2.1/exception:
 
 /usr/include/asm-generic/types.h:
 
 /usr/include/asm-generic/bitsperlong.h:
 
-/home/doceo/Core/Code/C++/OpenCore/src/shader.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/type_ptr.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/epsilon.inl:
-
-/usr/include/c++/15.2.1/cctype:
-
-/usr/include/c++/15.2.1/backward/binders.h:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/epsilon.hpp:
-
-/usr/include/asm-generic/errno.h:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint1_sized.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint1.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_relational.inl:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int1_sized.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int1.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float1.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double1_precision.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_double1.hpp:
-
-/usr/lib32/libXdmcp.so.6:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool1.hpp:
-
-/usr/lib/libglfw.so.3.4:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_trigonometric.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_transform.inl:
-
-/usr/include/linux/errno.h:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_transform.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_float_precision.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_float.hpp:
-
-/usr/lib/libc_nonshared.a:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool1_precision.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_common.inl:
-
-/usr/lib/libc.so.6:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_trigonometric.inl:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_common.hpp:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_geometric.hpp:
-
-/usr/lib32/libX11.so.6:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_quat.hpp:
-
 /home/doceo/Core/Code/C++/OpenCore/src/texture.hpp:
 
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_relational.inl:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_relational.hpp:
+/home/doceo/Core/Code/C++/OpenCore/src/shader.hpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
 
@@ -1572,8 +1663,6 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float3_precision.hpp:
 
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/quaternion.inl:
-
 /usr/include/bits/types/__locale_t.h:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double2x3.hpp:
@@ -1598,6 +1687,8 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/vec4.hpp:
 
+/home/doceo/Core/Code/C++/OpenCore/src/time.hpp:
+
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool4_precision.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_bool2.hpp:
@@ -1614,8 +1705,6 @@ CMakeFiles/OpenCore.dir/src/shader.cpp.o:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_uint2.hpp:
 
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_geometric.inl:
-
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat3x3.inl:
 
 CMakeFiles/OpenCore.dir/src/texture.cpp.o:
@@ -1629,8 +1718,6 @@ CMakeFiles/OpenCore.dir/src/texture.cpp.o:
 /usr/include/string.h:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/scalar_uint_sized.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_double.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/KHR/khrplatform.h:
 
@@ -1666,11 +1753,7 @@ CMakeFiles/OpenCore.dir/src/texture.cpp.o:
 
 /usr/include/bits/types/__mbstate_t.h:
 
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/vec1.hpp:
-
 /home/doceo/Core/Code/C++/OpenCore/include/glm/geometric.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/quaternion_double_precision.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_geometric.inl:
 
@@ -1709,8 +1792,6 @@ CMakeFiles/OpenCore.dir/src/texture.cpp.o:
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_int2_sized.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x4.inl:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/quaternion.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x4.hpp:
 
@@ -1764,8 +1845,6 @@ CMakeFiles/OpenCore.dir/src/texture.cpp.o:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x3.inl:
 
-/usr/include/c++/15.2.1/cstring:
-
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_mat4x2.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x3_precision.hpp:
@@ -1801,8 +1880,6 @@ libglad.a:
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_projection.inl:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/_fixes.hpp:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_float.hpp:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double4x4.hpp:
 
@@ -1960,8 +2037,6 @@ libglad.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h:
 
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_float1_precision.hpp:
-
 /usr/include/features-time64.h:
 
 /home/doceo/Core/Code/C++/OpenCore/include/glm/ext/matrix_double3x4_precision.hpp:
@@ -1983,8 +2058,6 @@ libglad.a:
 /home/doceo/Core/Code/C++/OpenCore/include/glm/glm.hpp:
 
 /usr/include/c++/15.2.1/tr1/special_function_util.h:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/type_ptr.inl:
 
 /usr/include/bits/endianness.h:
 
@@ -2088,8 +2161,6 @@ libglad.a:
 
 /usr/include/c++/15.2.1/debug/debug.h:
 
-/home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_quat.inl:
-
 /usr/include/c++/15.2.1/type_traits:
 
 /usr/include/bits/timesize.h:
@@ -2153,8 +2224,6 @@ libglad.a:
 /usr/include/c++/15.2.1/bits/functexcept.h:
 
 /usr/include/bits/types/struct_itimerspec.h:
-
-/home/doceo/Core/Code/C++/OpenCore/include/glm/ext/vector_relational.hpp:
 
 /usr/include/c++/15.2.1/bits/predefined_ops.h:
 
