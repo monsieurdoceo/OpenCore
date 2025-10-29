@@ -10,9 +10,6 @@ private:
 	float _deltaTime;
 	float _lastFrame;
 
-	double _previousTime = glfwGetTime();
-	int _frameCount = 0;
-
 public:
 	void update()
 	{
@@ -24,18 +21,6 @@ public:
 	float getDeltaTime() 
 	{
 		return _deltaTime;
-	}
-
-	void getFramerate()
-	{
-		double currentTime = glfwGetTime();
-		_frameCount++;
-		if (currentTime - _previousTime >= 1.0)
-		{
-			std::cout << "FPS: " << _frameCount << std::endl;
-			_frameCount = 0;
-			_previousTime = currentTime;
-		}
 	}
 };
 
