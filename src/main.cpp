@@ -204,6 +204,7 @@ int main()
 		shader.setVec3("objectColor", glm::vec3(1.0f, 0.5f, 0.31f));
 		shader.setVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
 		shader.setVec3("lightPos", lightPos);
+		shader.setVec3("viewPos", camera.getPosition());
 
 		glm::mat4 projection = glm::perspective(glm::radians(camera.getZoom()), 800.0f / 600.0f, 0.1f, 100.0f);
 		shader.setMat4("projection", projection);
@@ -221,7 +222,7 @@ int main()
 		lightSourceShader.use();
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
-		
+
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, lightPos);
 		model = glm::scale(model, glm::vec3(0.6f)); // a smaller cube
