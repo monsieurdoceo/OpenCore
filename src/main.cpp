@@ -223,9 +223,13 @@ int main()
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
 
+		lightPos.x = 2.0f * sin(glfwGetTime());
+		lightPos.y = -0.3f;
+		lightPos.z = 1.5f * cos(glfwGetTime());
+
 		model = glm::mat4(1.0f);
 		model = glm::translate(model, lightPos);
-		model = glm::scale(model, glm::vec3(0.6f)); // a smaller cube
+		model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
 		lightSourceShader.setMat4("model", model);
 
 		glBindVertexArray(lightCubeVAO);
