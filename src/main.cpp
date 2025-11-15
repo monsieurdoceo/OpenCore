@@ -222,9 +222,10 @@ int main()
 		lightSourceShader.use();
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
+		lightSourceShader.setVec3("lightPos", lightPos);
 
 		lightPos.x = 2.0f * sin(glfwGetTime());
-		lightPos.y = -0.3f;
+		lightPos.y = sin(glfwGetTime() / 3.0f);
 		lightPos.z = 1.5f * cos(glfwGetTime());
 
 		model = glm::mat4(1.0f);
