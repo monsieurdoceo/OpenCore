@@ -12,8 +12,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 Camera camera(glm::vec3(0.0f, 1.0f, 3.0f));
-float lastX = 800.0f / 2.0f;
-float lastY = 600.0f / 2.0f;
+float lastX = 1920.0f / 2.0f;
+float lastY = 1080.0f / 2.0f;
 bool firstMouse = true;
 
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
@@ -75,6 +75,19 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 	camera.processMouseMovement(xoffSet, yoffSet);
 }
 
+void window_focus_callback(GLFWwindow* window, int focused);
+void window_focus_callback(GLFWwindow* window, int focused)
+{
+	if (focused)
+	{
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	}
+	else
+	{
+		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+	}
+}
+
 int main()
 {
 	// Initialising glfw
@@ -85,9 +98,16 @@ int main()
 #ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
+glfwWindowHint(GLFW_AUTO_ICONIFY, GLFW_FALSE);
 
-	// Creating a window
-	GLFWwindow* window = glfwCreateWindow(800, 600, "OpenCore", NULL, NULL);
+	// Creating a borderless window
+	GLFWmonitor* primaryMonitor = glfwGetPrimaryMonitor();
+	const GLFWvidmode* mode = glfwGetVideoMode(primaryMonitor);
+
+	int mx, my;
+	glfwGetMonitorPos(primaryMonitor, &mx, &my);
+
+	GLFWwindow* window = glfwCreateWindow(mode->width, mode->height, "OpenCore", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -95,8 +115,16 @@ int main()
 		return -1;
 	}
 
+	glfwSetWindowAttrib(window, GLFW_DECORATED, GLFW_FALSE);
+	glfwSetWindowAttrib(window, GLFW_FLOATING, GLFW_TRUE);
+	glfwSetWindowSize(window, mode->width, mode->height);
+	glfwSetWindowPos(window, 0, 0);
+
+	glfwSetWindowMonitor(window, NULL, mx, my, mode->width, mode->height, mode->refreshRate);
+
 	// Init GLad and create a context to the window
 	glfwMakeContextCurrent(window);
+	glfwSwapInterval(0);
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
 	{
@@ -105,8 +133,8 @@ int main()
 	}
 
 	glEnable(GL_DEPTH_TEST);
-	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetWindowFocusCallback(window, window_focus_callback);	
 
 	// Creating a shader
 	Shader shader("../res/shaders/vertex.vs", "../res/shaders/fragment.fs");
@@ -190,6 +218,7 @@ int main()
 	// Run till the window close
 	while (!glfwWindowShouldClose(window))
 	{
+		glfwPollEvents();
 		// Update Time
 		time.update();
 
@@ -206,7 +235,7 @@ int main()
 		shader.setVec3("lightPos", lightPos);
 		shader.setVec3("viewPos", camera.getPosition());
 
-		glm::mat4 projection = glm::perspective(glm::radians(camera.getZoom()), 800.0f / 600.0f, 0.1f, 100.0f);
+		glm::mat4 projection = glm::perspective(glm::radians(camera.getZoom()), (float) (mode->width / mode->height), 0.1f, 100.0f);
 		shader.setMat4("projection", projection);
 
 		glm::mat4 view = camera.getViewMatrix();	
@@ -238,7 +267,6 @@ int main()
 
 		// Get all events and register them on the window
 		glfwSwapBuffers(window);
-		glfwPollEvents();
 	}
 
 	// Free the ram and useless buffer and shader
