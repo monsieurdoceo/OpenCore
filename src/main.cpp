@@ -78,14 +78,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 void window_focus_callback(GLFWwindow* window, int focused);
 void window_focus_callback(GLFWwindow* window, int focused)
 {
-	if (focused)
-	{
-		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-	}
-	else
-	{
-		glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-	}
+	glfwSetInputMode(window, GLFW_CURSOR, focused ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
 }
 
 int main()
@@ -95,17 +88,14 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
 #ifdef __APPLE__
 	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
-glfwWindowHint(GLFW_AUTO_ICONIFY, GLFW_FALSE);
 
-	// Creating a borderless window
+	// Creating a window
 	GLFWmonitor* primaryMonitor = glfwGetPrimaryMonitor();
 	const GLFWvidmode* mode = glfwGetVideoMode(primaryMonitor);
-
-	int mx, my;
-	glfwGetMonitorPos(primaryMonitor, &mx, &my);
 
 	GLFWwindow* window = glfwCreateWindow(mode->width, mode->height, "OpenCore", NULL, NULL);
 	if (window == NULL)
@@ -115,16 +105,10 @@ glfwWindowHint(GLFW_AUTO_ICONIFY, GLFW_FALSE);
 		return -1;
 	}
 
-	glfwSetWindowAttrib(window, GLFW_DECORATED, GLFW_FALSE);
-	glfwSetWindowAttrib(window, GLFW_FLOATING, GLFW_TRUE);
-	glfwSetWindowSize(window, mode->width, mode->height);
-	glfwSetWindowPos(window, 0, 0);
-
-	glfwSetWindowMonitor(window, NULL, mx, my, mode->width, mode->height, mode->refreshRate);
-
 	// Init GLad and create a context to the window
 	glfwMakeContextCurrent(window);
 	glfwSwapInterval(0);
+
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	if (!gladLoadGLLoader((GLADloadproc) glfwGetProcAddress))
 	{
@@ -235,7 +219,13 @@ glfwWindowHint(GLFW_AUTO_ICONIFY, GLFW_FALSE);
 		shader.setVec3("lightPos", lightPos);
 		shader.setVec3("viewPos", camera.getPosition());
 
-		glm::mat4 projection = glm::perspective(glm::radians(camera.getZoom()), (float) (mode->width / mode->height), 0.1f, 100.0f);
+		shader.setVec3("material.ambient", glm::vec3(1.0f, 0.5f, 0.31f));
+		shader.setVec3("material.diffuse", glm::vec3(1.0f, 0.5f, 0.31f));
+		shader.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+		shader.setFloat("material.shininess", 32.0f);
+		
+		float aspect = (float) mode->width / (float) mode->height;
+		glm::mat4 projection = glm::perspective(glm::radians(camera.getZoom()), aspect, 0.1f, 100.0f);
 		shader.setMat4("projection", projection);
 
 		glm::mat4 view = camera.getViewMatrix();	
@@ -252,7 +242,7 @@ glfwWindowHint(GLFW_AUTO_ICONIFY, GLFW_FALSE);
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
 		lightSourceShader.setVec3("lightPos", lightPos);
-
+	
 		lightPos.x = 2.0f * sin(glfwGetTime());
 		lightPos.y = sin(glfwGetTime() / 3.0f);
 		lightPos.z = 1.5f * cos(glfwGetTime());
