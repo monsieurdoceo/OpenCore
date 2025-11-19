@@ -125,48 +125,49 @@ int main()
 	Shader lightSourceShader("../res/shaders/lightVertex.vs", "../res/shaders/lightFragment.fs");
 
 	float vertices[] = {
-    		-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-     		 0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
-     		 0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
-     		 0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
-    		-0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
-    		-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f, 
+		// positions          // normals           // texture coords
+        	-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f,  0.0f,
+        	 0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f,  0.0f,
+        	 0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f,  1.0f,
+        	 0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f,  1.0f,
+        	-0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f,  1.0f,
+        	-0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f,  0.0f,
 
-    		-0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-     		 0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-     		 0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-     		 0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-    		-0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-    		-0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+        	-0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f,  0.0f,
+        	 0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f,  0.0f,
+        	 0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f,  1.0f,
+        	 0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  1.0f,  1.0f,
+        	-0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f,  1.0f,
+        	-0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,  0.0f,  0.0f,
 
-    		-0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-    		-0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-    		-0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-    		-0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-    		-0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-    		-0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+        	-0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+        	-0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  1.0f,  1.0f,
+        	-0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+        	-0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+        	-0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  0.0f,  0.0f,
+        	-0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
 
-    		 0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-    		 0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-    		 0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-    		 0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-    		 0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-    		 0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+         	0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+         	0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  1.0f,  1.0f,
+         	0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+        	0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,  0.0f,  1.0f,
+        	0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  0.0f,  0.0f,
+         	0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,  1.0f,  0.0f,
+	
+	       -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  1.0f,
+         	0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  1.0f,  1.0f,
+         	0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f,  0.0f,
+         	0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  1.0f,  0.0f,
+               -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  0.0f,
+               -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,  0.0f,  1.0f,
 
-    		-0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-    		 0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-    		 0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-    		 0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-    		-0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-    		-0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-
-    		-0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-    		 0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-    		 0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-    		 0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-    		-0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-    		-0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
-	};
+               -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  1.0f,
+         	0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  1.0f,
+         	0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  0.0f,
+         	0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  1.0f,  0.0f,
+               -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  0.0f,
+               -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  1.0f
+    	};
 
 	// Creating a VBO[Vertex Buffer Object], a VAO[Vertex Array Object] and a EBO[Element Buffer Object]
 	unsigned int VBO, VAO;
@@ -180,24 +181,31 @@ int main()
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 	
 	// Asign and creating a array pointer to the vertices
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*) 0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) 0);
 	glEnableVertexAttribArray(0);
 
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*) (3 * sizeof(float)));
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) (3 * sizeof(float)));
 	glEnableVertexAttribArray(1);	
+
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) (6 * sizeof(float)));
+	glEnableVertexAttribArray(2);
 
 	unsigned int lightCubeVAO;
 	glGenVertexArrays(1, &lightCubeVAO);
 	glBindVertexArray(lightCubeVAO);
 
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*) 0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*) 0);
 	glEnableVertexAttribArray(0);
 
 	// Unbind the VBO and VAO
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindVertexArray(0);
 		
+	Texture texture = Texture("../res/textures/container2.png", true, false);
 	Time time;	
+
+	shader.use();
+	shader.setInt("material.diffuse", 0);
 
 	// Run till the window close
 	while (!glfwWindowShouldClose(window))
@@ -214,26 +222,13 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		shader.use();
-		shader.setVec3("objectColor", glm::vec3(1.0f, 0.5f, 0.31f));
 		shader.setVec3("viewPos", camera.getPosition());
-		
-		glm::vec3 lightColor = glm::vec3
-		(
-		 static_cast<float>(sin(glfwGetTime() * 2.0)),
-		 static_cast<float>(sin(glfwGetTime() * 0.7)),
-		 static_cast<float>(sin(glfwGetTime() * 1.3))
-		);
-
-		glm::vec3 diffuseColor = lightColor * glm::vec3(0.5f);
-		glm::vec3 ambientColor = diffuseColor * glm::vec3(0.2f);
-
 		shader.setVec3("light.position", lightPos);
-		shader.setVec3("light.ambient", ambientColor);
-		shader.setVec3("light.diffuse", diffuseColor);
+
+		shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+		shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
 		shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
 
-		shader.setVec3("material.ambient", glm::vec3(1.0f, 0.5f, 0.31f));
-		shader.setVec3("material.diffuse", glm::vec3(1.0f, 0.5f, 0.31f));
 		shader.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
 		shader.setFloat("material.shininess", 32.0f);
 		
@@ -246,6 +241,8 @@ int main()
 		
 		glm::mat4 model = glm::mat4(1.0f);
 		shader.setMat4("model", model);
+
+		texture.use(GL_TEXTURE0);
 		
 		// Draw the element
 		glBindVertexArray(VAO);

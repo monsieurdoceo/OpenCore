@@ -154,6 +154,9 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=OpenCore
 
 //Value Computed by CMake
+CMAKE_PROJECT_SPDX_LICENSE:STATIC=
+
+//Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0.0
 
 //Value Computed by CMake
@@ -304,9 +307,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/doceo/Core/Code/C++/OpenCore/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=4
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=1
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=2
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=0
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
