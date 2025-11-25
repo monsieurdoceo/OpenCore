@@ -202,10 +202,12 @@ int main()
 	glBindVertexArray(0);
 		
 	Texture texture = Texture("../res/textures/container2.png", true, false);
+	Texture specularTexture = Texture("../res/textures/container2_specular.png", true, false);
 	Time time;	
 
 	shader.use();
 	shader.setInt("material.diffuse", 0);
+	shader.setInt("material.specular", 1);
 
 	// Run till the window close
 	while (!glfwWindowShouldClose(window))
@@ -229,7 +231,6 @@ int main()
 		shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
 		shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
 
-		shader.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
 		shader.setFloat("material.shininess", 32.0f);
 		
 		float aspect = (float) mode->width / (float) mode->height;
@@ -243,6 +244,7 @@ int main()
 		shader.setMat4("model", model);
 
 		texture.use(GL_TEXTURE0);
+		specularTexture.use(GL_TEXTURE1);
 		
 		// Draw the element
 		glBindVertexArray(VAO);
