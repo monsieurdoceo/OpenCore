@@ -13,6 +13,7 @@ set(SRC_DIR
     "src/shader.cpp"
     "src/texture.cpp"
     "src/camera.cpp"
+    "src/inputsystem.cpp"
 )
 
 add_executable(OpenCore ${SRC_DIR})

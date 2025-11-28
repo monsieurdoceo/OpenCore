@@ -5,6 +5,7 @@
 #include "texture.hpp"
 #include "camera.hpp"
 #include "time.hpp"
+#include "inputsystem.hpp"
 
 #include <iostream>
 
@@ -12,67 +13,12 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 Camera camera(glm::vec3(0.0f, 1.0f, 3.0f));
-float lastX = 1920.0f / 2.0f;
-float lastY = 1080.0f / 2.0f;
-bool firstMouse = true;
-
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
 	glViewport(0, 0, width, height);
-}
-
-void processInput(GLFWwindow* window, Time time);
-void processInput(GLFWwindow* window, Time time)
-{
-	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) 
-	{
-		glfwSetWindowShouldClose(window, true);
-	}
-
-	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-	{
-		camera.processKeyboard(FORWARD, time.getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-	{
-		camera.processKeyboard(BACKWARD, time.getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-	{
-		camera.processKeyboard(LEFT, time.getDeltaTime());
-	}
-	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-	{
-		camera.processKeyboard(RIGHT, time.getDeltaTime());
-	}
-}
-
-void mouse_callback(GLFWwindow* window, double xposIn, double yposIn);
-void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
-{
-	float xpos = static_cast<float>(xposIn);
-	float ypos = static_cast<float>(yposIn);
-
-	if (firstMouse)
-	{
-		lastX = xpos;
-		lastY = ypos;
-		firstMouse = false;
-	}
-
-	float xoffSet = xpos - lastX;
-	float yoffSet = lastY - ypos;
-	lastX = xpos;
-	lastY = ypos;
-
-	const float sensitivity = 0.1f;
-	xoffSet *= sensitivity;
-	yoffSet *= sensitivity;
-
-	camera.processMouseMovement(xoffSet, yoffSet);
 }
 
 void window_focus_callback(GLFWwindow* window, int focused);
@@ -116,8 +62,10 @@ int main()
 		return -1;
 	}
 
+	InputSystem inputSystem = InputSystem(camera);	
+
 	glEnable(GL_DEPTH_TEST);
-	glfwSetCursorPosCallback(window, mouse_callback);
+	glfwSetCursorPosCallback(window, inputSystem.mouse_callback);
 	glfwSetWindowFocusCallback(window, window_focus_callback);	
 
 	// Creating a shader
@@ -217,7 +165,7 @@ int main()
 		time.update();
 
 		// Register Input
-		processInput(window, time);
+		inputSystem.processInput(window, time);
 
 		// Clear the screen
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);

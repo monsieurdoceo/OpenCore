@@ -2,7 +2,6 @@
 #define TIME_HPP
 
 #include <GLFW/glfw3.h>
-#include <iostream>
 
 class Time
 {

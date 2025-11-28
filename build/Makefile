@@ -190,6 +190,30 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
+src/inputsystem.o: src/inputsystem.cpp.o
+.PHONY : src/inputsystem.o
+
+# target to build an object file
+src/inputsystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o
+.PHONY : src/inputsystem.cpp.o
+
+src/inputsystem.i: src/inputsystem.cpp.i
+.PHONY : src/inputsystem.i
+
+# target to preprocess a source file
+src/inputsystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/inputsystem.cpp.i
+.PHONY : src/inputsystem.cpp.i
+
+src/inputsystem.s: src/inputsystem.cpp.s
+.PHONY : src/inputsystem.s
+
+# target to generate assembly for a file
+src/inputsystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/inputsystem.cpp.s
+.PHONY : src/inputsystem.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -278,6 +302,9 @@ help:
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
+	@echo "... src/inputsystem.o"
+	@echo "... src/inputsystem.i"
+	@echo "... src/inputsystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
