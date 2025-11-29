@@ -66,6 +66,9 @@ int main()
 	glEnable(GL_DEPTH_TEST);
 
 	glfwSetCursorPosCallback(window, InputSystem::mousePosCallback);
+	glfwSetMouseButtonCallback(window, InputSystem::mouseButtonCallback);
+	glfwSetScrollCallback(window, InputSystem::mouseScrollCallback);
+	glfwSetKeyCallback(window, InputSystem::keyCallback);
 
 	glfwSetWindowFocusCallback(window, window_focus_callback);	
 
@@ -165,9 +168,6 @@ int main()
 		// Update Time
 		time.update();
 
-		// Register Input
-		//inputSystem.processInput(window, time);
-
 		// Clear the screen
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -215,8 +215,15 @@ int main()
 		glBindVertexArray(lightCubeVAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 
-		// Get all events and register them on the window
+		if (inputSystem->isKeyPressed(GLFW_KEY_SPACE))
+		{
+			glfwSetWindowShouldClose(window, true);
+			std::cout << "Space bar has been pressed" << std::endl;
+		}
+
+		// Get all events and register them on the window + reset inputs frames
 		glfwSwapBuffers(window);
+		inputSystem->endFrame();
 	}
 
 	// Free the ram and useless buffer and shader
@@ -227,6 +234,7 @@ int main()
 	shader.remove();
 	lightSourceShader.remove();
 
+	glfwDestroyWindow(window);
 	glfwTerminate();
 	return 0;
 }
