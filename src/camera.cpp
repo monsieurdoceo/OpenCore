@@ -32,29 +32,6 @@ Camera::Camera(float posX, float posY, float posZ, float upX, float upY, float u
 	updateCameraVectors();
 }
 
-void Camera::processKeyboard(Camera_Movement direction, float deltaTime)
-{
-	float velocity = m_movementSpeed * deltaTime;
-	if (direction == FORWARD)
-	{
-		m_position += m_front * velocity;
-	}
-	if (direction == BACKWARD)
-	{
-		m_position -= m_front * velocity;
-	}
-	if (direction == LEFT)
-	{
-		m_position -= m_right * velocity;
-	}
-	if (direction == RIGHT)
-	{
-		m_position += m_right * velocity;
-	}
-
-	//m_position.y = 0.0f; 
-}
-
 void Camera::processMouseMovement(float xoffSet, float yoffSet, GLboolean containPitch)
 {
 	xoffSet *= m_mouseSensitivity;

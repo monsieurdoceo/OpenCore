@@ -12,9 +12,6 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-Camera camera(glm::vec3(0.0f, 1.0f, 3.0f));
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
-
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
@@ -62,10 +59,14 @@ int main()
 		return -1;
 	}
 
-	InputSystem inputSystem = InputSystem(camera);	
+	InputSystem* inputSystem = InputSystem::getInstance();
+	Camera camera(glm::vec3(0.0f, 1.0f, 3.0f));
+	glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 	glEnable(GL_DEPTH_TEST);
-	glfwSetCursorPosCallback(window, inputSystem.mouse_callback);
+
+	glfwSetCursorPosCallback(window, InputSystem::mousePosCallback);
+
 	glfwSetWindowFocusCallback(window, window_focus_callback);	
 
 	// Creating a shader
@@ -165,7 +166,7 @@ int main()
 		time.update();
 
 		// Register Input
-		inputSystem.processInput(window, time);
+		//inputSystem.processInput(window, time);
 
 		// Clear the screen
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
