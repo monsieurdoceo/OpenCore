@@ -35,13 +35,16 @@ void InputSystem::mouseScrollCallback(GLFWwindow* window, double xOffset, double
 
 void InputSystem::keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-	if (action == GLFW_PRESS)
+	if (key <= GLFW_KEY_LAST && key >= 0)
 	{
-		getInstance()->m_keyPressed[key] = true;
-	}
-	else if (action == GLFW_RELEASE)
-	{
-		getInstance()->m_keyPressed[key] = false;
+		if (action == GLFW_PRESS)
+		{
+			getInstance()->m_keyPressed[key] = true;
+		}
+		else if (action == GLFW_RELEASE)
+		{
+			getInstance()->m_keyPressed[key] = false;
+		}
 	}
 }
 
@@ -50,5 +53,5 @@ void InputSystem::endFrame()
 	m_scrollX = 0;
 	m_scrollY = 0;
 	m_lastX = m_posX;
-	m_lastY = m_posY;
+	m_lastY = m_posY;	
 }

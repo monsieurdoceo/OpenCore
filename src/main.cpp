@@ -218,7 +218,6 @@ int main()
 		if (inputSystem->isKeyPressed(GLFW_KEY_SPACE))
 		{
 			glfwSetWindowShouldClose(window, true);
-			std::cout << "Space bar has been pressed" << std::endl;
 		}
 
 		// Get all events and register them on the window + reset inputs frames

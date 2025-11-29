@@ -228,6 +228,18 @@ CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o: \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/type_half.inl \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/integer.hpp \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/detail/func_integer.inl \
+ /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/bits/stl_algo.h \
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.2.1/initializer_list \
+ /usr/include/c++/15.2.1/bits/stl_heap.h \
+ /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h /usr/include/c++/15.2.1/new \
+ /usr/include/c++/15.2.1/bits/exception.h \
+ /usr/include/c++/15.2.1/bits/stl_construct.h \
+ /usr/include/c++/15.2.1/cstdlib \
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.2.1/pstl/execution_defs.h \
  /home/doceo/Core/Code/C++/OpenCore/src/camera.hpp \
  /home/doceo/Core/Code/C++/OpenCore/include/glad/glad.h \
  /home/doceo/Core/Code/C++/OpenCore/include/KHR/khrplatform.h \

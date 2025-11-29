@@ -2,6 +2,7 @@
 #define INPUTSYSTEM_HPP
 
 #include <glm/glm.hpp>
+#include <algorithm>
 
 #include "camera.hpp"
 #include "time.hpp"
@@ -14,19 +15,21 @@ private:
 	double m_scrollX, m_scrollY;
 	double m_lastX, m_lastY;
 	double m_posX, m_posY;
-	bool m_mouseButtonPressed[3];
+	bool m_mouseButtonPressed[3] = { false };
 	bool m_isDragging;
 
-	bool m_keyPressed[350];
+	bool m_keyPressed[GLFW_KEY_LAST + 1] = { false };
 
-	InputSystem() {}
+	InputSystem() = default;
 	InputSystem(const InputSystem&) = delete;
 	InputSystem& operator=(const InputSystem&) = delete;
 
 public:
 	static InputSystem* getInstance() 
 	{
-		return (m_instance == nullptr) ? new InputSystem() : m_instance;
+		if (m_instance == nullptr) m_instance = new InputSystem();
+
+		return m_instance;
 	}
 
 	static void mousePosCallback(GLFWwindow* window, double xPos, double yPos);
@@ -36,7 +39,7 @@ public:
 
 	void endFrame();
 	bool mouseButtonDown(int button) { return m_mouseButtonPressed[button]; }
-	bool isKeyPressed(int keyCode) { return m_keyPressed[keyCode]; }
+	bool isKeyPressed(int keyCode) { return (keyCode <= GLFW_KEY_LAST && keyCode >= 0) ? m_keyPressed[keyCode] : false; }
 
 	float getMouseX() { return (float) m_posX; }
 	float getMouseY() { return (float) m_posY; }

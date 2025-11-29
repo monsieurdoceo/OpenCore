@@ -343,4 +343,12 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/../ext/matrix_transform.inl \
  /home/doceo/Core/Code/C++/OpenCore/include/glm/gtc/matrix_transform.inl \
  /home/doceo/Core/Code/C++/OpenCore/src/time.hpp \
- /home/doceo/Core/Code/C++/OpenCore/src/inputsystem.hpp
+ /home/doceo/Core/Code/C++/OpenCore/src/inputsystem.hpp \
+ /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/bits/stl_algo.h \
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.2.1/bits/stl_heap.h \
+ /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.2.1/pstl/execution_defs.h
