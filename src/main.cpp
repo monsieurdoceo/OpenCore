@@ -13,15 +13,23 @@
 #include <glm/gtc/matrix_transform.hpp>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-	glViewport(0, 0, width, height);
-}
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) { glViewport(0, 0, width, height); }
 
 void window_focus_callback(GLFWwindow* window, int focused);
-void window_focus_callback(GLFWwindow* window, int focused)
+void window_focus_callback(GLFWwindow* window, int focused) { glfwSetInputMode(window, GLFW_CURSOR, focused ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL); }
+
+void processInput(GLFWwindow* window, InputSystem* inputSystem, Camera& camera, float deltaTime);
+void processInput(GLFWwindow* window, InputSystem* inputSystem, Camera& camera, float deltaTime)
 {
-	glfwSetInputMode(window, GLFW_CURSOR, focused ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
+	// Set up the camera movement (mouse and keyboard)
+	camera.processMouseMovement(inputSystem->getMouseDirectionX(), inputSystem->getMouseDirectionY());
+	if (inputSystem->isKeyPressed(GLFW_KEY_W)) camera.processKeyboard(FORWARD, deltaTime);
+	if (inputSystem->isKeyPressed(GLFW_KEY_S)) camera.processKeyboard(BACKWARD, deltaTime);
+	if (inputSystem->isKeyPressed(GLFW_KEY_A)) camera.processKeyboard(LEFT, deltaTime);
+	if (inputSystem->isKeyPressed(GLFW_KEY_D)) camera.processKeyboard(RIGHT, deltaTime);
+
+	// Close the window
+	if (inputSystem->isKeyPressed(GLFW_KEY_SPACE)) glfwSetWindowShouldClose(window, true);
 }
 
 int main()
@@ -168,6 +176,8 @@ int main()
 		// Update Time
 		time.update();
 
+		processInput(window, inputSystem, camera, time.getDeltaTime());
+
 		// Clear the screen
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -214,12 +224,7 @@ int main()
 
 		glBindVertexArray(lightCubeVAO);
 		glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		if (inputSystem->isKeyPressed(GLFW_KEY_SPACE))
-		{
-			glfwSetWindowShouldClose(window, true);
-		}
-
+	
 		// Get all events and register them on the window + reset inputs frames
 		glfwSwapBuffers(window);
 		inputSystem->endFrame();
@@ -237,4 +242,3 @@ int main()
 	glfwTerminate();
 	return 0;
 }
-

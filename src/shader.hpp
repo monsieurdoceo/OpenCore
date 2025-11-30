@@ -36,10 +36,7 @@ public:
 	void setMat3(const std::string& name, const glm::mat3& value) const;
 	void setMat4(const std::string& name, const glm::mat4& value) const; 
 
-	unsigned int getID() 
-	{
-		return m_programID;
-	}
+	unsigned int getID() { return m_programID; }
 };
 
 #endif

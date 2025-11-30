@@ -55,3 +55,12 @@ void Camera::processMouseMovement(float xoffSet, float yoffSet, GLboolean contai
 	updateCameraVectors();
 }
 
+void Camera::processKeyboard(Camera_Movement direction, float deltaTime)
+{
+	float velocity = m_movementSpeed * deltaTime;
+	if (direction == FORWARD) m_position += m_front * velocity;
+	if (direction == BACKWARD) m_position -= m_front * velocity;
+	if (direction == LEFT) m_position -= m_right * velocity;
+	if (direction == RIGHT) m_position += m_right * velocity;
+}
+

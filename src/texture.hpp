@@ -15,10 +15,7 @@ public:
 	Texture(const char* texturePath, bool isPng, bool reverse);
 	void use(GLenum texture);
 
-	unsigned int getID()
-	{
-		return m_textureID;
-	}
+	unsigned int getID() { return m_textureID; }
 };
 
 #endif

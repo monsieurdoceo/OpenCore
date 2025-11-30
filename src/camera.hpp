@@ -5,6 +5,14 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+enum Camera_Movement 
+{
+	FORWARD,
+	BACKWARD,
+	LEFT,
+	RIGHT
+};
+
 class Camera
 {
 private:
@@ -27,61 +35,25 @@ public:
 	Camera(float posX, float posY, float posZ, float upX, float upY, float upZ, float yaw, float pitch);
 	
 	void processMouseMovement(float xoffSet, float yoffSet, GLboolean containPitch = true);
+	void processKeyboard(Camera_Movement direction, float deltaTime);
 
-	glm::mat4 getViewMatrix()
-	{
-		return glm::lookAt(m_position, m_position + m_front, m_up);
-	}
+	glm::mat4 getViewMatrix() { return glm::lookAt(m_position, m_position + m_front, m_up); }
 
-	glm::vec3 getPosition()
-	{
-		return m_position;
-	}
+	glm::vec3 getPosition() { return m_position; }
 
-	glm::vec3 getFront()
-	{
-		return m_front;
-	}
+	glm::vec3 getFront() { return m_front; }
+	glm::vec3 getUp() { return m_up; }
+	glm::vec3 getRight() { return m_right; }
+	
+	glm::vec3 getWorldUp() { return m_worldUp; }
 
-	glm::vec3 getUp()
-	{
-		return m_up;
-	}
+	float getYaw() { return m_yaw; }
+	float getPitch() { return m_pitch; }
 
-	glm::vec3 getRight()
-	{
-		return m_right;
-	}
+	float getMovementSpeed() { return m_movementSpeed; }
+	float getMouseSenitivity() { return m_mouseSensitivity; }
 
-	glm::vec3 getWorldUp()
-	{
-		return m_worldUp;
-	}
-
-	float getYaw()
-	{
-		return m_yaw;
-	}
-
-	float getPitch()
-	{
-		return m_pitch;
-	}
-
-	float getMovementSpeed()
-	{
-		return m_movementSpeed;
-	}
-
-	float getMouseSenitivity()
-	{
-		return m_mouseSensitivity;
-	}
-
-	float getZoom()
-	{
-		return m_zoom;
-	}
+	float getZoom() { return m_zoom; }
 };
 
 #endif 

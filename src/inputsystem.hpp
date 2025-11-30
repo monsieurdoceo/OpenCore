@@ -43,7 +43,7 @@ public:
 
 	float getMouseX() { return (float) m_posX; }
 	float getMouseY() { return (float) m_posY; }
-	float getMouseDirectionX() { return (float) (m_lastX - m_posX); }
+	float getMouseDirectionX() { return (float) (m_posX - m_lastX); }
 	float getMouseDirectionY() { return (float) (m_lastY - m_posY); }
 	float getMouseScrollX() { return (float) m_scrollX; }
 	float getMouseScrollY() { return (float) m_scrollY; }
