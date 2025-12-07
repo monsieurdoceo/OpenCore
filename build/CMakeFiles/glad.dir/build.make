@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/sbin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/sbin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/doceo/Core/Code/C++/OpenCore
+CMAKE_SOURCE_DIR = /home/monsieurdoceo/Core/Codes/C++/OpenCore
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/doceo/Core/Code/C++/OpenCore/build
+CMAKE_BINARY_DIR = /home/monsieurdoceo/Core/Codes/C++/OpenCore/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/glad.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/glad.dir/codegen:
 .PHONY : CMakeFiles/glad.dir/codegen
 
 CMakeFiles/glad.dir/src/glad.c.o: CMakeFiles/glad.dir/flags.make
-CMakeFiles/glad.dir/src/glad.c.o: /home/doceo/Core/Code/C++/OpenCore/src/glad.c
+CMakeFiles/glad.dir/src/glad.c.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/glad.c
 CMakeFiles/glad.dir/src/glad.c.o: CMakeFiles/glad.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/src/glad.c.o"
-	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/src/glad.c.o -MF CMakeFiles/glad.dir/src/glad.c.o.d -o CMakeFiles/glad.dir/src/glad.c.o -c /home/doceo/Core/Code/C++/OpenCore/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/src/glad.c.o -MF CMakeFiles/glad.dir/src/glad.c.o.d -o CMakeFiles/glad.dir/src/glad.c.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/glad.c
 
 CMakeFiles/glad.dir/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/src/glad.c.i"
-	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/doceo/Core/Code/C++/OpenCore/src/glad.c > CMakeFiles/glad.dir/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/glad.c > CMakeFiles/glad.dir/src/glad.c.i
 
 CMakeFiles/glad.dir/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/src/glad.c.s"
-	/usr/sbin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/doceo/Core/Code/C++/OpenCore/src/glad.c -o CMakeFiles/glad.dir/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/glad.c -o CMakeFiles/glad.dir/src/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \
@@ -96,7 +96,7 @@ glad_EXTERNAL_OBJECTS =
 libglad.a: CMakeFiles/glad.dir/src/glad.c.o
 libglad.a: CMakeFiles/glad.dir/build.make
 libglad.a: CMakeFiles/glad.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libglad.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libglad.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/glad.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glad.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/glad.dir/clean:
 .PHONY : CMakeFiles/glad.dir/clean
 
 CMakeFiles/glad.dir/depend:
-	cd /home/doceo/Core/Code/C++/OpenCore/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/doceo/Core/Code/C++/OpenCore /home/doceo/Core/Code/C++/OpenCore /home/doceo/Core/Code/C++/OpenCore/build /home/doceo/Core/Code/C++/OpenCore/build /home/doceo/Core/Code/C++/OpenCore/build/CMakeFiles/glad.dir/DependInfo.cmake "--color=$(COLOR)" glad
+	cd /home/monsieurdoceo/Core/Codes/C++/OpenCore/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/monsieurdoceo/Core/Codes/C++/OpenCore /home/monsieurdoceo/Core/Codes/C++/OpenCore /home/monsieurdoceo/Core/Codes/C++/OpenCore/build /home/monsieurdoceo/Core/Codes/C++/OpenCore/build /home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles/glad.dir/DependInfo.cmake "--color=$(COLOR)" glad
 .PHONY : CMakeFiles/glad.dir/depend
 

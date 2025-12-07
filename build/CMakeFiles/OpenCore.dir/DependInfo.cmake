@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/doceo/Core/Code/C++/OpenCore/src/camera.cpp" "CMakeFiles/OpenCore.dir/src/camera.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/camera.cpp.o.d"
-  "/home/doceo/Core/Code/C++/OpenCore/src/inputsystem.cpp" "CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o.d"
-  "/home/doceo/Core/Code/C++/OpenCore/src/main.cpp" "CMakeFiles/OpenCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/main.cpp.o.d"
-  "/home/doceo/Core/Code/C++/OpenCore/src/shader.cpp" "CMakeFiles/OpenCore.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/shader.cpp.o.d"
-  "/home/doceo/Core/Code/C++/OpenCore/src/texture.cpp" "CMakeFiles/OpenCore.dir/src/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/texture.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/camera.cpp" "CMakeFiles/OpenCore.dir/src/camera.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/camera.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/inputsystem.cpp" "CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp" "CMakeFiles/OpenCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/main.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp" "CMakeFiles/OpenCore.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/shader.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp" "CMakeFiles/OpenCore.dir/src/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/texture.cpp.o.d"
   "" "OpenCore" "gcc" "CMakeFiles/OpenCore.dir/link.d"
   )
 
