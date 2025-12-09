@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/CMakeLists.txt"
-  "CMakeFiles/4.2.0/CMakeCCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeSystem.cmake"
+  "CMakeFiles/4.2.1/CMakeCCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeSystem.cmake"
   "/usr/lib/cmake/glfw3/glfw3Config.cmake"
   "/usr/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
   "/usr/lib/cmake/glfw3/glfw3Targets-none.cmake"
@@ -47,7 +47,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake"
   "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake"
   "/usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake"
-  "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake"
   "/usr/share/cmake/Modules/CheckIncludeFile.cmake"
   "/usr/share/cmake/Modules/CheckLibraryExists.cmake"
@@ -147,13 +146,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/4.2.0/CMakeSystem.cmake"
-  "CMakeFiles/4.2.0/CMakeCCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeCCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeCCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeCXXCompiler.cmake"
-  "CMakeFiles/4.2.0/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeSystem.cmake"
+  "CMakeFiles/4.2.1/CMakeCCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeCCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeCCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
+  "CMakeFiles/4.2.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
