@@ -69,7 +69,7 @@ int main()
 
 	InputSystem* inputSystem = InputSystem::getInstance();
 	Camera camera(glm::vec3(0.0f, 1.0f, 3.0f));
-	glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+	glm::vec3 lightPos(1.0f, 1.0f, 1.0f);
 
 	glEnable(GL_DEPTH_TEST);
 
@@ -198,12 +198,15 @@ int main()
 
 		shader.use();
 		shader.setVec3("viewPos", camera.getPosition());
-		shader.setVec3("light.position", lightPos);
-        shader.setVec3("light.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
+        shader.setVec3("light.position", lightPos);
 
 		shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
 		shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
 		shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
+
+        shader.setFloat("light.constant", 1.0f);
+        shader.setFloat("light.linear", 0.09f);
+        shader.setFloat("light.quadratic", 0.032f);
 
 		shader.setFloat("material.shininess", 32.0f);
 		
@@ -233,7 +236,7 @@ int main()
 		    glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 
-		/*lightSourceShader.use();
+		lightSourceShader.use();
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
 	
@@ -241,13 +244,13 @@ int main()
 		lightPos.y = sin(glfwGetTime() / 3.0f);
 		lightPos.z = 1.5f * cos(glfwGetTime());
 
-		glm::mat4 model = glm::mat4(1.0f);
+		model = glm::mat4(1.0f);
 		model = glm::translate(model, lightPos);
 		model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
 		lightSourceShader.setMat4("model", model);
 
 		glBindVertexArray(lightCubeVAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);*/
+		glDrawArrays(GL_TRIANGLES, 0, 36);
 	
 		// Get all events and register them on the window + reset inputs frames
 		glfwSwapBuffers(window);
