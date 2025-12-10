@@ -168,8 +168,6 @@ int main()
     glm::vec3 cubePositions[] = 
     {
         glm::vec3( 0.0f,  0.0f,  0.0f),
-        glm::vec3( 2.0f,  5.0f, -15.0f),
-        glm::vec3(-1.5f, -2.2f, -2.5f),
         glm::vec3(-3.8f, -2.0f, -12.3f),
         glm::vec3( 2.4f, -0.4f, -3.5f),
         glm::vec3(-1.7f,  3.0f, -7.5f),
@@ -205,8 +203,8 @@ int main()
 		shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
 
         shader.setFloat("light.constant", 1.0f);
-        shader.setFloat("light.linear", 0.09f);
-        shader.setFloat("light.quadratic", 0.032f);
+        shader.setFloat("light.linear", 0.045f);
+        shader.setFloat("light.quadratic", 0.0075f);
 
 		shader.setFloat("material.shininess", 32.0f);
 		
@@ -217,20 +215,26 @@ int main()
 		glm::mat4 view = camera.getViewMatrix();	
 		shader.setMat4("view", view);
 
-        glm::mat4 model = glm::mat4(1.0f);
-        shader.setMat4("model", model);
+        // glm::mat4 model = glm::mat4(1.0f);
+        // shader.setMat4("model", model);
 		
 		texture.use(GL_TEXTURE0);
 		specularTexture.use(GL_TEXTURE1);
 		
 		// Draw the element
 		glBindVertexArray(VAO);
-        for (unsigned int i = 0; i < 10; i++)
+        for (unsigned int i = 0; i < 8; i++)
         {
             glm::mat4 model = glm::mat4(1.0f);
-            model = glm::translate(model, cubePositions[i]);
+            glm::vec3 cubePosition = cubePositions[i];
+            
+            cubePosition.x = (3.0f * sin(glfwGetTime())) * i;
+            cubePosition.y = (sin(glfwGetTime() / 5.0f)) * i;
+            cubePosition.z = (2.5f * cos(glfwGetTime())) * i;            
+            model = glm::translate(model, cubePosition);
+
             float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+            model = glm::rotate(model, glm::radians(angle), glm::vec3(time.getDeltaTime(), time.getDeltaTime(), time.getDeltaTime()));
             shader.setMat4("model", model);
 
 		    glDrawArrays(GL_TRIANGLES, 0, 36);
@@ -244,7 +248,7 @@ int main()
 		lightPos.y = sin(glfwGetTime() / 3.0f);
 		lightPos.z = 1.5f * cos(glfwGetTime());
 
-		model = glm::mat4(1.0f);
+		glm::mat4 model = glm::mat4(1.0f);
 		model = glm::translate(model, lightPos);
 		model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
 		lightSourceShader.setMat4("model", model);
