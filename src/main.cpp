@@ -196,7 +196,10 @@ int main()
 
 		shader.use();
 		shader.setVec3("viewPos", camera.getPosition());
-        shader.setVec3("light.position", lightPos);
+        shader.setVec3("light.position", camera.getPosition());
+        shader.setVec3("light.direction", camera.getFront());
+        shader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
+        shader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
 
 		shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
 		shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
@@ -214,9 +217,6 @@ int main()
 
 		glm::mat4 view = camera.getViewMatrix();	
 		shader.setMat4("view", view);
-
-        // glm::mat4 model = glm::mat4(1.0f);
-        // shader.setMat4("model", model);
 		
 		texture.use(GL_TEXTURE0);
 		specularTexture.use(GL_TEXTURE1);
@@ -226,21 +226,17 @@ int main()
         for (unsigned int i = 0; i < 8; i++)
         {
             glm::mat4 model = glm::mat4(1.0f);
-            glm::vec3 cubePosition = cubePositions[i];
-            
-            cubePosition.x = (3.0f * sin(glfwGetTime())) * i;
-            cubePosition.y = (sin(glfwGetTime() / 5.0f)) * i;
-            cubePosition.z = (2.5f * cos(glfwGetTime())) * i;            
+            glm::vec3 cubePosition = cubePositions[i];        
             model = glm::translate(model, cubePosition);
 
             float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(time.getDeltaTime(), time.getDeltaTime(), time.getDeltaTime()));
+            model = glm::rotate(model, glm::radians(angle * (float) glfwGetTime()), glm::vec3(1.0f));
             shader.setMat4("model", model);
 
 		    glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 
-		lightSourceShader.use();
+		/*lightSourceShader.use();
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
 	
@@ -254,7 +250,7 @@ int main()
 		lightSourceShader.setMat4("model", model);
 
 		glBindVertexArray(lightCubeVAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		glDrawArrays(GL_TRIANGLES, 0, 36);*/
 	
 		// Get all events and register them on the window + reset inputs frames
 		glfwSwapBuffers(window);
