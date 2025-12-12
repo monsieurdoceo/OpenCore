@@ -8,29 +8,14 @@
 #include "inputsystem.hpp"
 
 #include <iostream>
+#include <string>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void framebuffer_size_callback(GLFWwindow* window, int width, int height) { glViewport(0, 0, width, height); }
-
 void window_focus_callback(GLFWwindow* window, int focused);
-void window_focus_callback(GLFWwindow* window, int focused) { glfwSetInputMode(window, GLFW_CURSOR, focused ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL); }
-
 void processInput(GLFWwindow* window, InputSystem* inputSystem, Camera& camera, float deltaTime);
-void processInput(GLFWwindow* window, InputSystem* inputSystem, Camera& camera, float deltaTime)
-{
-	// Set up the camera movement (mouse and keyboard)
-	camera.processMouseMovement(inputSystem->getMouseDirectionX(), inputSystem->getMouseDirectionY());
-	if (inputSystem->isKeyPressed(GLFW_KEY_W)) camera.processKeyboard(FORWARD, deltaTime);
-	if (inputSystem->isKeyPressed(GLFW_KEY_S)) camera.processKeyboard(BACKWARD, deltaTime);
-	if (inputSystem->isKeyPressed(GLFW_KEY_A)) camera.processKeyboard(LEFT, deltaTime);
-	if (inputSystem->isKeyPressed(GLFW_KEY_D)) camera.processKeyboard(RIGHT, deltaTime);
-
-	// Close the window
-	if (inputSystem->isKeyPressed(GLFW_KEY_SPACE)) glfwSetWindowShouldClose(window, true);
-}
 
 int main()
 {
@@ -69,7 +54,6 @@ int main()
 
 	InputSystem* inputSystem = InputSystem::getInstance();
 	Camera camera(glm::vec3(0.0f, 1.0f, 3.0f));
-	glm::vec3 lightPos(1.0f, 1.0f, 1.0f);
 
 	glEnable(GL_DEPTH_TEST);
 
@@ -175,7 +159,14 @@ int main()
         glm::vec3( 1.5f,  2.0f, -2.5f),
         glm::vec3( 1.5f,  0.2f, -1.5f),
         glm::vec3(-1.3f,  1.0f, -1.5f)
-    };	
+    };
+
+    glm::vec3 pointLightPositions[] = {
+	    glm::vec3( 0.7f,  0.2f,  2.0f),
+	    glm::vec3( 2.3f, -3.3f, -4.0f),
+	    glm::vec3(-4.0f,  2.0f, -12.0f),
+	    glm::vec3( 0.0f,  0.0f, -3.0f)
+    };  	
 
 	shader.use();
 	shader.setInt("material.diffuse", 0);
@@ -196,18 +187,24 @@ int main()
 
 		shader.use();
 		shader.setVec3("viewPos", camera.getPosition());
-        shader.setVec3("light.position", camera.getPosition());
-        shader.setVec3("light.direction", camera.getFront());
-        shader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
-        shader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
 
-		shader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
-		shader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f));
-		shader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
-
-        shader.setFloat("light.constant", 1.0f);
-        shader.setFloat("light.linear", 0.045f);
-        shader.setFloat("light.quadratic", 0.0075f);
+        shader.setVec3("dirLight.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
+        shader.setVec3("dirLight.ambient", glm::vec3(0.05f, 0.05f, 0.05f));
+        shader.setVec3("dirLight.diffuse", glm::vec3(0.4f, 0.4f, 0.4f));
+        shader.setVec3("dirLight.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+        for (unsigned int i = 0; i < 4; i++)
+        {
+            std::string pointLight = std::string("pointLights[") + std::to_string(i) + "].";
+            
+            shader.setVec3(pointLight + "position", pointLightPositions[i]);
+            shader.setVec3(pointLight + "ambient", glm::vec3(0.05f, 0.05f, 0.05f));
+            shader.setVec3(pointLight + "diffuse", glm::vec3(0.8f, 0.8f, 0.8f));
+            shader.setVec3(pointLight + "specular", glm::vec3(1.0f, 1.0f, 1.0f));
+            
+            shader.setFloat(pointLight + "constant", 1.0f);
+            shader.setFloat(pointLight + "linear", 0.09f);
+            shader.setFloat(pointLight + "quadratic", 0.032f);
+        }
 
 		shader.setFloat("material.shininess", 32.0f);
 		
@@ -217,6 +214,8 @@ int main()
 
 		glm::mat4 view = camera.getViewMatrix();	
 		shader.setMat4("view", view);
+
+        glm::mat4 model = glm::mat4(1.0f);
 		
 		texture.use(GL_TEXTURE0);
 		specularTexture.use(GL_TEXTURE1);
@@ -225,7 +224,7 @@ int main()
 		glBindVertexArray(VAO);
         for (unsigned int i = 0; i < 8; i++)
         {
-            glm::mat4 model = glm::mat4(1.0f);
+            model = glm::mat4(1.0f);
             glm::vec3 cubePosition = cubePositions[i];        
             model = glm::translate(model, cubePosition);
 
@@ -236,21 +235,22 @@ int main()
 		    glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 
-		/*lightSourceShader.use();
+		lightSourceShader.use();
 		lightSourceShader.setMat4("projection", projection);
 		lightSourceShader.setMat4("view", view);
+
+        glBindVertexArray(lightCubeVAO);
+        for (unsigned int i = 0; i < 4; i++)
+        {
+            glm::vec3 lightPos = pointLightPositions[i];
+
+		    model = glm::mat4(1.0f);
+		    model = glm::translate(model, lightPos);
+		    model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
+		    lightSourceShader.setMat4("model", model);
 	
-		lightPos.x = 2.0f * sin(glfwGetTime());
-		lightPos.y = sin(glfwGetTime() / 3.0f);
-		lightPos.z = 1.5f * cos(glfwGetTime());
-
-		glm::mat4 model = glm::mat4(1.0f);
-		model = glm::translate(model, lightPos);
-		model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
-		lightSourceShader.setMat4("model", model);
-
-		glBindVertexArray(lightCubeVAO);
-		glDrawArrays(GL_TRIANGLES, 0, 36);*/
+		    glDrawArrays(GL_TRIANGLES, 0, 36);
+        }
 	
 		// Get all events and register them on the window + reset inputs frames
 		glfwSwapBuffers(window);
@@ -268,5 +268,20 @@ int main()
 	glfwDestroyWindow(window);
 	glfwTerminate();
 	return 0;
+}
+
+void framebuffer_size_callback(GLFWwindow* window, int width, int height) { glViewport(0, 0, width, height); }
+void window_focus_callback(GLFWwindow* window, int focused) { glfwSetInputMode(window, GLFW_CURSOR, focused ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL); }
+void processInput(GLFWwindow* window, InputSystem* inputSystem, Camera& camera, float deltaTime)
+{
+	// Set up the camera movement (mouse and keyboard)
+	camera.processMouseMovement(inputSystem->getMouseDirectionX(), inputSystem->getMouseDirectionY());
+	if (inputSystem->isKeyPressed(GLFW_KEY_W)) camera.processKeyboard(FORWARD, deltaTime);
+	if (inputSystem->isKeyPressed(GLFW_KEY_S)) camera.processKeyboard(BACKWARD, deltaTime);
+	if (inputSystem->isKeyPressed(GLFW_KEY_A)) camera.processKeyboard(LEFT, deltaTime);
+	if (inputSystem->isKeyPressed(GLFW_KEY_D)) camera.processKeyboard(RIGHT, deltaTime);
+
+	// Close the window
+	if (inputSystem->isKeyPressed(GLFW_KEY_SPACE)) glfwSetWindowShouldClose(window, true);
 }
 
