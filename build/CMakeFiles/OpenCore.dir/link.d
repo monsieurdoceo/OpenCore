@@ -3,14 +3,15 @@ OpenCore: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/OpenCore.dir/src/main.cpp.o \
+  CMakeFiles/OpenCore.dir/src/window.cpp.o \
+  CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o \
+  CMakeFiles/OpenCore.dir/src/camera.cpp.o \
   CMakeFiles/OpenCore.dir/src/shader.cpp.o \
   CMakeFiles/OpenCore.dir/src/texture.cpp.o \
-  CMakeFiles/OpenCore.dir/src/camera.cpp.o \
-  CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o \
   libglad.a \
   /usr/lib/libglfw.so.3.4 \
-  /usr/lib/libGL.so \
-  /usr/lib/libglm.a \
+  /usr/lib/libGLX.so \
+  /usr/lib/libOpenGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -38,9 +39,8 @@ OpenCore: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o \
   /usr/lib/libGLdispatch.so.0 \
-  /usr/lib/libGLX.so.0 \
-  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libX11.so.6 \
+  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libxcb.so.1 \
   /usr/lib/libXau.so.6 \
   /usr/lib/libXdmcp.so.6
@@ -53,21 +53,23 @@ OpenCore: \
 
 CMakeFiles/OpenCore.dir/src/main.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/shader.cpp.o:
+CMakeFiles/OpenCore.dir/src/window.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/texture.cpp.o:
+CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o:
 
 CMakeFiles/OpenCore.dir/src/camera.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o:
+CMakeFiles/OpenCore.dir/src/shader.cpp.o:
+
+CMakeFiles/OpenCore.dir/src/texture.cpp.o:
 
 libglad.a:
 
 /usr/lib/libglfw.so.3.4:
 
-/usr/lib/libGL.so:
+/usr/lib/libGLX.so:
 
-/usr/lib/libglm.a:
+/usr/lib/libOpenGL.so:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so:
 
@@ -123,11 +125,9 @@ libglad.a:
 
 /usr/lib/libGLdispatch.so.0:
 
-/usr/lib/libGLX.so.0:
+/usr/lib/libX11.so.6:
 
 /usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib/libX11.so.6:
 
 /usr/lib/libxcb.so.1:
 

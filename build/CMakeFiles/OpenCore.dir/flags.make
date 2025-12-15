@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/monsieurdoceo/Core/Codes/C++/OpenCore/include
+CXX_INCLUDES = -I/home/monsieurdoceo/Core/Codes/C++/OpenCore/include -I/home/monsieurdoceo/Core/Codes/C++/OpenCore/src
 
 CXX_FLAGS = -std=gnu++17
 

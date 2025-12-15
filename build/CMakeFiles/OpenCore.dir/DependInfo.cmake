@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp" "CMakeFiles/OpenCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/main.cpp.o.d"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp" "CMakeFiles/OpenCore.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/shader.cpp.o.d"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp" "CMakeFiles/OpenCore.dir/src/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/texture.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp" "CMakeFiles/OpenCore.dir/src/window.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/window.cpp.o.d"
   "" "OpenCore" "gcc" "CMakeFiles/OpenCore.dir/link.d"
   )
 

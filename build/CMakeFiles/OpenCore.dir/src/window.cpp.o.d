@@ -1,5 +1,5 @@
-CMakeFiles/OpenCore.dir/src/main.cpp.o: \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp \
+CMakeFiles/OpenCore.dir/src/window.cpp.o: \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp \
  /usr/include/stdc-predef.h \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glad/glad.h \

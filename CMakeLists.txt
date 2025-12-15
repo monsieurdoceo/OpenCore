@@ -1,26 +1,34 @@
 cmake_minimum_required(VERSION 3.10)
-project(OpenCore VERSION 1.0.0)
+project(OpenCore VERSION 0.0.1)
 
 set(CMAKE_CXX_STANDARD 17)
-set(OpenGL_GL_PREFERENCE LEGACY)
+set(OpenGL_GL_PREFERENCE GLVND)
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
-find_package(glm CONFIG REQUIRED)
 
-set(SRC_DIR 
+set(SRC_DIR
     "src/main.cpp"
+    "src/window.cpp"
+    "src/inputsystem.cpp"
+    "src/camera.cpp"
     "src/shader.cpp"
     "src/texture.cpp"
-    "src/camera.cpp"
-    "src/inputsystem.cpp"
 )
 
 add_executable(OpenCore ${SRC_DIR})
 add_library(glad include/glad/glad.h src/glad.c)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/)
 
-target_link_libraries(OpenCore glad)
-target_link_libraries(OpenCore glfw)
-target_link_libraries(OpenCore OpenGL::GL)
-target_link_libraries(OpenCore glm::glm)
+target_include_directories(OpenCore PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/
+)
+target_include_directories(glad PUBLIC 
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/
+)
+
+target_link_libraries(OpenCore PRIVATE
+    glad
+    glfw
+    OpenGL::GL
+)

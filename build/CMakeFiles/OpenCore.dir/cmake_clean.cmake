@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OpenCore.dir/src/shader.cpp.o.d"
   "CMakeFiles/OpenCore.dir/src/texture.cpp.o"
   "CMakeFiles/OpenCore.dir/src/texture.cpp.o.d"
+  "CMakeFiles/OpenCore.dir/src/window.cpp.o"
+  "CMakeFiles/OpenCore.dir/src/window.cpp.o.d"
   "OpenCore"
   "OpenCore.pdb"
 )
