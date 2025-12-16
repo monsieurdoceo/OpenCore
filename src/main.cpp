@@ -1,24 +1,36 @@
 #include "window.hpp"
+#include "editorscene.hpp"
 
 int main()
 {
-    Window window;
+    try 
+    {
+        Window& window = Window::get();
 
-    float deltaTime = 0.0f;
-    float lastFrame = 0.0f;
+        window.addScene<EditorScene>();
+        window.changeScene(0);
 
-	while (!glfwWindowShouldClose(window.getWindow()))
-	{
-        float currentFrame = (float) glfwGetTime();
-        deltaTime = currentFrame - lastFrame;
-        lastFrame = currentFrame;
+        float deltaTime = 0.0f;
+        float lastFrame = 0.0f;
 
-        window.update();
-        window.fixedUpdate(deltaTime);
-        window.render();
-	}
+	    while (!glfwWindowShouldClose(window.getWindow()))
+	    {
+            float currentFrame = (float) glfwGetTime();
+            deltaTime = currentFrame - lastFrame;
+            lastFrame = currentFrame;
+
+            window.update();
+            window.fixedUpdate(deltaTime);
+            window.render();
+	    }
     
-    window.erase();
+        window.erase();
+    } 
+    catch (const std::exception& e) 
+    {   
+        std::cerr << "Fatal error during application startup: " << e.what() << std::endl;
+        return -1;
+    }
+
 	return 0;
 }
-

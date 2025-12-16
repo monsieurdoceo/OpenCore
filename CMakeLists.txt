@@ -10,6 +10,7 @@ find_package(glfw3 REQUIRED)
 set(SRC_DIR
     "src/main.cpp"
     "src/window.cpp"
+    "src/editorscene.cpp"
     "src/inputsystem.cpp"
     "src/camera.cpp"
     "src/shader.cpp"
