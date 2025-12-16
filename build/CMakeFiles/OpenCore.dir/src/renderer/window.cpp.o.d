@@ -1,5 +1,5 @@
-CMakeFiles/OpenCore.dir/src/main.cpp.o: \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp \
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o: \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp \
  /usr/include/stdc-predef.h \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glad/glad.h \
@@ -368,10 +368,4 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
  /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../systems/../renderer/camera.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../scenes/scene.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/scene.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/shader.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../objects/texture.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/camera.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/window.hpp
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../scenes/scene.hpp

@@ -9,12 +9,12 @@ find_package(glfw3 REQUIRED)
 
 set(SRC_DIR
     "src/main.cpp"
-    "src/window.cpp"
-    "src/editorscene.cpp"
-    "src/inputsystem.cpp"
-    "src/camera.cpp"
-    "src/shader.cpp"
-    "src/texture.cpp"
+    "src/renderer/window.cpp"
+    "src/scenes/editorscene.cpp"
+    "src/systems/inputsystem.cpp"
+    "src/renderer/camera.cpp"
+    "src/renderer/shader.cpp"
+    "src/objects/texture.cpp"
 )
 
 add_executable(OpenCore ${SRC_DIR})

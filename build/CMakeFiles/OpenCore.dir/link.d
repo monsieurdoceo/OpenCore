@@ -3,12 +3,12 @@ OpenCore: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/OpenCore.dir/src/main.cpp.o \
-  CMakeFiles/OpenCore.dir/src/window.cpp.o \
-  CMakeFiles/OpenCore.dir/src/editorscene.cpp.o \
-  CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o \
-  CMakeFiles/OpenCore.dir/src/camera.cpp.o \
-  CMakeFiles/OpenCore.dir/src/shader.cpp.o \
-  CMakeFiles/OpenCore.dir/src/texture.cpp.o \
+  CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o \
+  CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o \
+  CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o \
+  CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o \
+  CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o \
+  CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o \
   libglad.a \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/libGLX.so \
@@ -54,17 +54,17 @@ OpenCore: \
 
 CMakeFiles/OpenCore.dir/src/main.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/window.cpp.o:
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/editorscene.cpp.o:
+CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o:
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/camera.cpp.o:
+CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/shader.cpp.o:
+CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o:
 
-CMakeFiles/OpenCore.dir/src/texture.cpp.o:
+CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o:
 
 libglad.a:
 

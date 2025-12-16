@@ -142,54 +142,6 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
-src/camera.o: src/camera.cpp.o
-.PHONY : src/camera.o
-
-# target to build an object file
-src/camera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/camera.cpp.o
-.PHONY : src/camera.cpp.o
-
-src/camera.i: src/camera.cpp.i
-.PHONY : src/camera.i
-
-# target to preprocess a source file
-src/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/camera.cpp.i
-.PHONY : src/camera.cpp.i
-
-src/camera.s: src/camera.cpp.s
-.PHONY : src/camera.s
-
-# target to generate assembly for a file
-src/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/camera.cpp.s
-.PHONY : src/camera.cpp.s
-
-src/editorscene.o: src/editorscene.cpp.o
-.PHONY : src/editorscene.o
-
-# target to build an object file
-src/editorscene.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/editorscene.cpp.o
-.PHONY : src/editorscene.cpp.o
-
-src/editorscene.i: src/editorscene.cpp.i
-.PHONY : src/editorscene.i
-
-# target to preprocess a source file
-src/editorscene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/editorscene.cpp.i
-.PHONY : src/editorscene.cpp.i
-
-src/editorscene.s: src/editorscene.cpp.s
-.PHONY : src/editorscene.s
-
-# target to generate assembly for a file
-src/editorscene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/editorscene.cpp.s
-.PHONY : src/editorscene.cpp.s
-
 src/glad.o: src/glad.c.o
 .PHONY : src/glad.o
 
@@ -213,30 +165,6 @@ src/glad.s: src/glad.c.s
 src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glad.dir/build.make CMakeFiles/glad.dir/src/glad.c.s
 .PHONY : src/glad.c.s
-
-src/inputsystem.o: src/inputsystem.cpp.o
-.PHONY : src/inputsystem.o
-
-# target to build an object file
-src/inputsystem.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o
-.PHONY : src/inputsystem.cpp.o
-
-src/inputsystem.i: src/inputsystem.cpp.i
-.PHONY : src/inputsystem.i
-
-# target to preprocess a source file
-src/inputsystem.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/inputsystem.cpp.i
-.PHONY : src/inputsystem.cpp.i
-
-src/inputsystem.s: src/inputsystem.cpp.s
-.PHONY : src/inputsystem.s
-
-# target to generate assembly for a file
-src/inputsystem.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/inputsystem.cpp.s
-.PHONY : src/inputsystem.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -262,77 +190,149 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/shader.o: src/shader.cpp.o
-.PHONY : src/shader.o
+src/objects/texture.o: src/objects/texture.cpp.o
+.PHONY : src/objects/texture.o
 
 # target to build an object file
-src/shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/shader.cpp.o
-.PHONY : src/shader.cpp.o
+src/objects/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o
+.PHONY : src/objects/texture.cpp.o
 
-src/shader.i: src/shader.cpp.i
-.PHONY : src/shader.i
+src/objects/texture.i: src/objects/texture.cpp.i
+.PHONY : src/objects/texture.i
 
 # target to preprocess a source file
-src/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/shader.cpp.i
-.PHONY : src/shader.cpp.i
+src/objects/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/objects/texture.cpp.i
+.PHONY : src/objects/texture.cpp.i
 
-src/shader.s: src/shader.cpp.s
-.PHONY : src/shader.s
+src/objects/texture.s: src/objects/texture.cpp.s
+.PHONY : src/objects/texture.s
 
 # target to generate assembly for a file
-src/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/shader.cpp.s
-.PHONY : src/shader.cpp.s
+src/objects/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/objects/texture.cpp.s
+.PHONY : src/objects/texture.cpp.s
 
-src/texture.o: src/texture.cpp.o
-.PHONY : src/texture.o
+src/renderer/camera.o: src/renderer/camera.cpp.o
+.PHONY : src/renderer/camera.o
 
 # target to build an object file
-src/texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/texture.cpp.o
-.PHONY : src/texture.cpp.o
+src/renderer/camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o
+.PHONY : src/renderer/camera.cpp.o
 
-src/texture.i: src/texture.cpp.i
-.PHONY : src/texture.i
+src/renderer/camera.i: src/renderer/camera.cpp.i
+.PHONY : src/renderer/camera.i
 
 # target to preprocess a source file
-src/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/texture.cpp.i
-.PHONY : src/texture.cpp.i
+src/renderer/camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.i
+.PHONY : src/renderer/camera.cpp.i
 
-src/texture.s: src/texture.cpp.s
-.PHONY : src/texture.s
+src/renderer/camera.s: src/renderer/camera.cpp.s
+.PHONY : src/renderer/camera.s
 
 # target to generate assembly for a file
-src/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/texture.cpp.s
-.PHONY : src/texture.cpp.s
+src/renderer/camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.s
+.PHONY : src/renderer/camera.cpp.s
 
-src/window.o: src/window.cpp.o
-.PHONY : src/window.o
+src/renderer/shader.o: src/renderer/shader.cpp.o
+.PHONY : src/renderer/shader.o
 
 # target to build an object file
-src/window.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/window.cpp.o
-.PHONY : src/window.cpp.o
+src/renderer/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o
+.PHONY : src/renderer/shader.cpp.o
 
-src/window.i: src/window.cpp.i
-.PHONY : src/window.i
+src/renderer/shader.i: src/renderer/shader.cpp.i
+.PHONY : src/renderer/shader.i
 
 # target to preprocess a source file
-src/window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/window.cpp.i
-.PHONY : src/window.cpp.i
+src/renderer/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.i
+.PHONY : src/renderer/shader.cpp.i
 
-src/window.s: src/window.cpp.s
-.PHONY : src/window.s
+src/renderer/shader.s: src/renderer/shader.cpp.s
+.PHONY : src/renderer/shader.s
 
 # target to generate assembly for a file
-src/window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/window.cpp.s
-.PHONY : src/window.cpp.s
+src/renderer/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.s
+.PHONY : src/renderer/shader.cpp.s
+
+src/renderer/window.o: src/renderer/window.cpp.o
+.PHONY : src/renderer/window.o
+
+# target to build an object file
+src/renderer/window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o
+.PHONY : src/renderer/window.cpp.o
+
+src/renderer/window.i: src/renderer/window.cpp.i
+.PHONY : src/renderer/window.i
+
+# target to preprocess a source file
+src/renderer/window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/window.cpp.i
+.PHONY : src/renderer/window.cpp.i
+
+src/renderer/window.s: src/renderer/window.cpp.s
+.PHONY : src/renderer/window.s
+
+# target to generate assembly for a file
+src/renderer/window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/renderer/window.cpp.s
+.PHONY : src/renderer/window.cpp.s
+
+src/scenes/editorscene.o: src/scenes/editorscene.cpp.o
+.PHONY : src/scenes/editorscene.o
+
+# target to build an object file
+src/scenes/editorscene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o
+.PHONY : src/scenes/editorscene.cpp.o
+
+src/scenes/editorscene.i: src/scenes/editorscene.cpp.i
+.PHONY : src/scenes/editorscene.i
+
+# target to preprocess a source file
+src/scenes/editorscene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.i
+.PHONY : src/scenes/editorscene.cpp.i
+
+src/scenes/editorscene.s: src/scenes/editorscene.cpp.s
+.PHONY : src/scenes/editorscene.s
+
+# target to generate assembly for a file
+src/scenes/editorscene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.s
+.PHONY : src/scenes/editorscene.cpp.s
+
+src/systems/inputsystem.o: src/systems/inputsystem.cpp.o
+.PHONY : src/systems/inputsystem.o
+
+# target to build an object file
+src/systems/inputsystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o
+.PHONY : src/systems/inputsystem.cpp.o
+
+src/systems/inputsystem.i: src/systems/inputsystem.cpp.i
+.PHONY : src/systems/inputsystem.i
+
+# target to preprocess a source file
+src/systems/inputsystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.i
+.PHONY : src/systems/inputsystem.cpp.i
+
+src/systems/inputsystem.s: src/systems/inputsystem.cpp.s
+.PHONY : src/systems/inputsystem.s
+
+# target to generate assembly for a file
+src/systems/inputsystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.s
+.PHONY : src/systems/inputsystem.cpp.s
 
 # Help Target
 help:
@@ -344,30 +344,30 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... OpenCore"
 	@echo "... glad"
-	@echo "... src/camera.o"
-	@echo "... src/camera.i"
-	@echo "... src/camera.s"
-	@echo "... src/editorscene.o"
-	@echo "... src/editorscene.i"
-	@echo "... src/editorscene.s"
 	@echo "... src/glad.o"
 	@echo "... src/glad.i"
 	@echo "... src/glad.s"
-	@echo "... src/inputsystem.o"
-	@echo "... src/inputsystem.i"
-	@echo "... src/inputsystem.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/shader.o"
-	@echo "... src/shader.i"
-	@echo "... src/shader.s"
-	@echo "... src/texture.o"
-	@echo "... src/texture.i"
-	@echo "... src/texture.s"
-	@echo "... src/window.o"
-	@echo "... src/window.i"
-	@echo "... src/window.s"
+	@echo "... src/objects/texture.o"
+	@echo "... src/objects/texture.i"
+	@echo "... src/objects/texture.s"
+	@echo "... src/renderer/camera.o"
+	@echo "... src/renderer/camera.i"
+	@echo "... src/renderer/camera.s"
+	@echo "... src/renderer/shader.o"
+	@echo "... src/renderer/shader.i"
+	@echo "... src/renderer/shader.s"
+	@echo "... src/renderer/window.o"
+	@echo "... src/renderer/window.i"
+	@echo "... src/renderer/window.s"
+	@echo "... src/scenes/editorscene.o"
+	@echo "... src/scenes/editorscene.i"
+	@echo "... src/scenes/editorscene.s"
+	@echo "... src/systems/inputsystem.o"
+	@echo "... src/systems/inputsystem.i"
+	@echo "... src/systems/inputsystem.s"
 .PHONY : help
 
 

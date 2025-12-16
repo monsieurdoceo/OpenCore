@@ -12,10 +12,10 @@
 #include <memory>
 
 #include "shader.hpp"
-#include "texture.hpp"
+#include "../objects/texture.hpp"
 #include "camera.hpp"
-#include "inputsystem.hpp"
-#include "scene.hpp"
+#include "../systems/inputsystem.hpp"
+#include "../scenes/scene.hpp"
 
 class Window
 {

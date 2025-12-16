@@ -86,110 +86,110 @@ CMakeFiles/OpenCore.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp -o CMakeFiles/OpenCore.dir/src/main.cpp.s
 
-CMakeFiles/OpenCore.dir/src/window.cpp.o: CMakeFiles/OpenCore.dir/flags.make
-CMakeFiles/OpenCore.dir/src/window.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp
-CMakeFiles/OpenCore.dir/src/window.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenCore.dir/src/window.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/window.cpp.o -MF CMakeFiles/OpenCore.dir/src/window.cpp.o.d -o CMakeFiles/OpenCore.dir/src/window.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o -MF CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o.d -o CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp
 
-CMakeFiles/OpenCore.dir/src/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp > CMakeFiles/OpenCore.dir/src/window.cpp.i
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/renderer/window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp > CMakeFiles/OpenCore.dir/src/renderer/window.cpp.i
 
-CMakeFiles/OpenCore.dir/src/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp -o CMakeFiles/OpenCore.dir/src/window.cpp.s
+CMakeFiles/OpenCore.dir/src/renderer/window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/renderer/window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp -o CMakeFiles/OpenCore.dir/src/renderer/window.cpp.s
 
-CMakeFiles/OpenCore.dir/src/editorscene.cpp.o: CMakeFiles/OpenCore.dir/flags.make
-CMakeFiles/OpenCore.dir/src/editorscene.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/editorscene.cpp
-CMakeFiles/OpenCore.dir/src/editorscene.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenCore.dir/src/editorscene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/editorscene.cpp.o -MF CMakeFiles/OpenCore.dir/src/editorscene.cpp.o.d -o CMakeFiles/OpenCore.dir/src/editorscene.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/editorscene.cpp
+CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.cpp
+CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o -MF CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o.d -o CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.cpp
 
-CMakeFiles/OpenCore.dir/src/editorscene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/editorscene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/editorscene.cpp > CMakeFiles/OpenCore.dir/src/editorscene.cpp.i
+CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.cpp > CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.i
 
-CMakeFiles/OpenCore.dir/src/editorscene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/editorscene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/editorscene.cpp -o CMakeFiles/OpenCore.dir/src/editorscene.cpp.s
+CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.cpp -o CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.s
 
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o: CMakeFiles/OpenCore.dir/flags.make
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/inputsystem.cpp
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o -MF CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o.d -o CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/inputsystem.cpp
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.cpp
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o -MF CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o.d -o CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.cpp
 
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/inputsystem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/inputsystem.cpp > CMakeFiles/OpenCore.dir/src/inputsystem.cpp.i
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.cpp > CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.i
 
-CMakeFiles/OpenCore.dir/src/inputsystem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/inputsystem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/inputsystem.cpp -o CMakeFiles/OpenCore.dir/src/inputsystem.cpp.s
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.cpp -o CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.s
 
-CMakeFiles/OpenCore.dir/src/camera.cpp.o: CMakeFiles/OpenCore.dir/flags.make
-CMakeFiles/OpenCore.dir/src/camera.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/camera.cpp
-CMakeFiles/OpenCore.dir/src/camera.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenCore.dir/src/camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/camera.cpp.o -MF CMakeFiles/OpenCore.dir/src/camera.cpp.o.d -o CMakeFiles/OpenCore.dir/src/camera.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/camera.cpp
+CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.cpp
+CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o -MF CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o.d -o CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.cpp
 
-CMakeFiles/OpenCore.dir/src/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/camera.cpp > CMakeFiles/OpenCore.dir/src/camera.cpp.i
+CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.cpp > CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.i
 
-CMakeFiles/OpenCore.dir/src/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/camera.cpp -o CMakeFiles/OpenCore.dir/src/camera.cpp.s
+CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.cpp -o CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.s
 
-CMakeFiles/OpenCore.dir/src/shader.cpp.o: CMakeFiles/OpenCore.dir/flags.make
-CMakeFiles/OpenCore.dir/src/shader.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp
-CMakeFiles/OpenCore.dir/src/shader.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenCore.dir/src/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/shader.cpp.o -MF CMakeFiles/OpenCore.dir/src/shader.cpp.o.d -o CMakeFiles/OpenCore.dir/src/shader.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp
+CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.cpp
+CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o -MF CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o.d -o CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.cpp
 
-CMakeFiles/OpenCore.dir/src/shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp > CMakeFiles/OpenCore.dir/src/shader.cpp.i
+CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.cpp > CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.i
 
-CMakeFiles/OpenCore.dir/src/shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp -o CMakeFiles/OpenCore.dir/src/shader.cpp.s
+CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.cpp -o CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.s
 
-CMakeFiles/OpenCore.dir/src/texture.cpp.o: CMakeFiles/OpenCore.dir/flags.make
-CMakeFiles/OpenCore.dir/src/texture.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp
-CMakeFiles/OpenCore.dir/src/texture.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenCore.dir/src/texture.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/texture.cpp.o -MF CMakeFiles/OpenCore.dir/src/texture.cpp.o.d -o CMakeFiles/OpenCore.dir/src/texture.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp
+CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o: CMakeFiles/OpenCore.dir/flags.make
+CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o: /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/objects/texture.cpp
+CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o: CMakeFiles/OpenCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/monsieurdoceo/Core/Codes/C++/OpenCore/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o -MF CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o.d -o CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o -c /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/objects/texture.cpp
 
-CMakeFiles/OpenCore.dir/src/texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/texture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp > CMakeFiles/OpenCore.dir/src/texture.cpp.i
+CMakeFiles/OpenCore.dir/src/objects/texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OpenCore.dir/src/objects/texture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/objects/texture.cpp > CMakeFiles/OpenCore.dir/src/objects/texture.cpp.i
 
-CMakeFiles/OpenCore.dir/src/texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/texture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp -o CMakeFiles/OpenCore.dir/src/texture.cpp.s
+CMakeFiles/OpenCore.dir/src/objects/texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OpenCore.dir/src/objects/texture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/objects/texture.cpp -o CMakeFiles/OpenCore.dir/src/objects/texture.cpp.s
 
 # Object files for target OpenCore
 OpenCore_OBJECTS = \
 "CMakeFiles/OpenCore.dir/src/main.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/window.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/editorscene.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/camera.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/shader.cpp.o" \
-"CMakeFiles/OpenCore.dir/src/texture.cpp.o"
+"CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o" \
+"CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o" \
+"CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o" \
+"CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o" \
+"CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o" \
+"CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o"
 
 # External object files for target OpenCore
 OpenCore_EXTERNAL_OBJECTS =
 
 OpenCore: CMakeFiles/OpenCore.dir/src/main.cpp.o
-OpenCore: CMakeFiles/OpenCore.dir/src/window.cpp.o
-OpenCore: CMakeFiles/OpenCore.dir/src/editorscene.cpp.o
-OpenCore: CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o
-OpenCore: CMakeFiles/OpenCore.dir/src/camera.cpp.o
-OpenCore: CMakeFiles/OpenCore.dir/src/shader.cpp.o
-OpenCore: CMakeFiles/OpenCore.dir/src/texture.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o
+OpenCore: CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o
 OpenCore: CMakeFiles/OpenCore.dir/build.make
 OpenCore: CMakeFiles/OpenCore.dir/compiler_depend.ts
 OpenCore: libglad.a

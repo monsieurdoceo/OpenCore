@@ -1,5 +1,5 @@
-#include "window.hpp"
-#include "editorscene.hpp"
+#include "renderer/window.hpp"
+#include "scenes/editorscene.hpp"
 
 int main()
 {

@@ -1,9 +1,9 @@
-CMakeFiles/OpenCore.dir/src/main.cpp.o: \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp \
+CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o: \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.cpp \
  /usr/include/stdc-predef.h \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glad/glad.h \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/KHR/khrplatform.h \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.hpp \
+ /usr/include/GLFW/glfw3.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,8 +13,7 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/time64.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+ /usr/include/bits/stdint-least.h \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/glm.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/detail/_fixes.hpp \
  /usr/include/c++/15.2.1/cmath \
@@ -229,6 +228,21 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/detail/type_half.inl \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/integer.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/detail/func_integer.inl \
+ /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/bits/stl_algo.h \
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.2.1/initializer_list \
+ /usr/include/c++/15.2.1/bits/stl_heap.h \
+ /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h /usr/include/c++/15.2.1/new \
+ /usr/include/c++/15.2.1/bits/exception.h \
+ /usr/include/c++/15.2.1/bits/stl_construct.h \
+ /usr/include/c++/15.2.1/cstdlib \
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.2.1/pstl/execution_defs.h \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/../renderer/camera.hpp \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glad/glad.h \
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/KHR/khrplatform.h \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/matrix_transform.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/../ext/matrix_projection.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/../ext/../gtc/constants.hpp \
@@ -241,137 +255,4 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/../ext/matrix_clip_space.inl \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/../ext/matrix_transform.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/../ext/matrix_transform.inl \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/matrix_transform.inl \
- /usr/include/c++/15.2.1/iostream /usr/include/c++/15.2.1/ostream \
- /usr/include/c++/15.2.1/bits/ostream.h /usr/include/c++/15.2.1/ios \
- /usr/include/c++/15.2.1/iosfwd /usr/include/c++/15.2.1/bits/stringfwd.h \
- /usr/include/c++/15.2.1/bits/memoryfwd.h \
- /usr/include/c++/15.2.1/bits/postypes.h /usr/include/c++/15.2.1/cwchar \
- /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/c++/15.2.1/exception \
- /usr/include/c++/15.2.1/bits/exception.h \
- /usr/include/c++/15.2.1/bits/exception_ptr.h \
- /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h \
- /usr/include/c++/15.2.1/typeinfo \
- /usr/include/c++/15.2.1/bits/hash_bytes.h /usr/include/c++/15.2.1/new \
- /usr/include/c++/15.2.1/bits/nested_exception.h \
- /usr/include/c++/15.2.1/bits/char_traits.h \
- /usr/include/c++/15.2.1/bits/localefwd.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
- /usr/include/c++/15.2.1/clocale /usr/include/locale.h \
- /usr/include/bits/locale.h /usr/include/c++/15.2.1/cctype \
- /usr/include/ctype.h /usr/include/c++/15.2.1/bits/ios_base.h \
- /usr/include/c++/15.2.1/ext/atomicity.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
- /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
- /usr/include/linux/sched/types.h /usr/include/linux/types.h \
- /usr/include/asm/types.h /usr/include/asm-generic/types.h \
- /usr/include/asm-generic/int-ll64.h /usr/include/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h /usr/include/asm/posix_types.h \
- /usr/include/asm/posix_types_64.h /usr/include/asm-generic/posix_types.h \
- /usr/include/bits/types/struct_sched_param.h /usr/include/bits/cpu-set.h \
- /usr/include/time.h /usr/include/bits/time.h /usr/include/bits/timex.h \
- /usr/include/bits/types/struct_tm.h \
- /usr/include/bits/types/struct_itimerspec.h /usr/include/bits/setjmp.h \
- /usr/include/bits/types/struct___jmp_buf_tag.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
- /usr/include/sys/single_threaded.h \
- /usr/include/c++/15.2.1/bits/locale_classes.h \
- /usr/include/c++/15.2.1/string /usr/include/c++/15.2.1/bits/allocator.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/include/c++/15.2.1/bits/new_allocator.h \
- /usr/include/c++/15.2.1/bits/ostream_insert.h \
- /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
- /usr/include/c++/15.2.1/bits/stl_function.h \
- /usr/include/c++/15.2.1/backward/binders.h \
- /usr/include/c++/15.2.1/bits/refwrap.h \
- /usr/include/c++/15.2.1/bits/invoke.h \
- /usr/include/c++/15.2.1/bits/range_access.h \
- /usr/include/c++/15.2.1/initializer_list \
- /usr/include/c++/15.2.1/bits/basic_string.h \
- /usr/include/c++/15.2.1/ext/alloc_traits.h \
- /usr/include/c++/15.2.1/bits/alloc_traits.h \
- /usr/include/c++/15.2.1/bits/stl_construct.h \
- /usr/include/c++/15.2.1/string_view \
- /usr/include/c++/15.2.1/bits/functional_hash.h \
- /usr/include/c++/15.2.1/bits/string_view.tcc \
- /usr/include/c++/15.2.1/ext/string_conversions.h \
- /usr/include/c++/15.2.1/cstdlib /usr/include/c++/15.2.1/cstdio \
- /usr/include/stdio.h /usr/include/bits/types/__fpos_t.h \
- /usr/include/bits/types/__fpos64_t.h \
- /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/c++/15.2.1/cerrno \
- /usr/include/errno.h /usr/include/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/bits/types/error_t.h \
- /usr/include/c++/15.2.1/bits/charconv.h \
- /usr/include/c++/15.2.1/bits/basic_string.tcc \
- /usr/include/c++/15.2.1/bits/memory_resource.h \
- /usr/include/c++/15.2.1/bits/uses_allocator.h \
- /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
- /usr/include/c++/15.2.1/tuple \
- /usr/include/c++/15.2.1/bits/locale_classes.tcc \
- /usr/include/c++/15.2.1/system_error \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/include/c++/15.2.1/stdexcept /usr/include/c++/15.2.1/streambuf \
- /usr/include/c++/15.2.1/bits/streambuf.tcc \
- /usr/include/c++/15.2.1/bits/basic_ios.h \
- /usr/include/c++/15.2.1/bits/locale_facets.h \
- /usr/include/c++/15.2.1/cwctype /usr/include/wctype.h \
- /usr/include/bits/wctype-wchar.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
- /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
- /usr/include/c++/15.2.1/bits/locale_facets.tcc \
- /usr/include/c++/15.2.1/bits/basic_ios.tcc \
- /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
- /usr/include/c++/15.2.1/bits/istream.tcc /usr/include/c++/15.2.1/vector \
- /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
- /usr/include/c++/15.2.1/bits/stl_vector.h \
- /usr/include/c++/15.2.1/bits/stl_bvector.h \
- /usr/include/c++/15.2.1/bits/vector.tcc /usr/include/c++/15.2.1/memory \
- /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15.2.1/bits/align.h \
- /usr/include/c++/15.2.1/bits/unique_ptr.h \
- /usr/include/c++/15.2.1/bits/shared_ptr.h \
- /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
- /usr/include/c++/15.2.1/bits/allocated_ptr.h \
- /usr/include/c++/15.2.1/ext/aligned_buffer.h \
- /usr/include/c++/15.2.1/ext/concurrence.h \
- /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
- /usr/include/c++/15.2.1/bits/atomic_base.h \
- /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15.2.1/backward/auto_ptr.h \
- /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
- /usr/include/c++/15.2.1/pstl/execution_defs.h \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.hpp \
- /usr/include/c++/15.2.1/fstream /usr/include/c++/15.2.1/bits/codecvt.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
- /usr/include/c++/15.2.1/bits/sstream.tcc \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../objects/texture.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../systems/inputsystem.hpp \
- /usr/include/c++/15.2.1/algorithm \
- /usr/include/c++/15.2.1/bits/stl_algo.h \
- /usr/include/c++/15.2.1/bits/algorithmfwd.h \
- /usr/include/c++/15.2.1/bits/stl_heap.h \
- /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
- /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../systems/../renderer/camera.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../scenes/scene.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/scene.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/shader.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../objects/texture.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/camera.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/window.hpp
+ /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/matrix_transform.inl

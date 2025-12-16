@@ -7,7 +7,7 @@
 #include <glm/glm.hpp>
 #include <algorithm>
 
-#include "camera.hpp"
+#include "../renderer/camera.hpp"
 
 class InputSystem
 {

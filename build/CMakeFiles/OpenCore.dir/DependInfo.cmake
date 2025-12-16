@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/camera.cpp" "CMakeFiles/OpenCore.dir/src/camera.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/camera.cpp.o.d"
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/editorscene.cpp" "CMakeFiles/OpenCore.dir/src/editorscene.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/editorscene.cpp.o.d"
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/inputsystem.cpp" "CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/inputsystem.cpp.o.d"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp" "CMakeFiles/OpenCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/main.cpp.o.d"
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/shader.cpp" "CMakeFiles/OpenCore.dir/src/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/shader.cpp.o.d"
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/texture.cpp" "CMakeFiles/OpenCore.dir/src/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/texture.cpp.o.d"
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/window.cpp" "CMakeFiles/OpenCore.dir/src/window.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/window.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/objects/texture.cpp" "CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.cpp" "CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.cpp" "CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp" "CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.cpp" "CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o.d"
+  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/systems/inputsystem.cpp" "CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o.d"
   "" "OpenCore" "gcc" "CMakeFiles/OpenCore.dir/link.d"
   )
 

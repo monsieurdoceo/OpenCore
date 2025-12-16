@@ -2,10 +2,10 @@
 #define EDITORSCENE_HPP
 
 #include "scene.hpp"
-#include "shader.hpp"
-#include "texture.hpp"
-#include "camera.hpp"
-#include "window.hpp"
+#include "../renderer/shader.hpp"
+#include "../objects/texture.hpp"
+#include "../renderer/camera.hpp"
+#include "../renderer/window.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
