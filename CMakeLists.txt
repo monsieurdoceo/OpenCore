@@ -6,6 +6,7 @@ set(OpenGL_GL_PREFERENCE GLVND)
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
+find_package(assimp REQUIRED)
 
 set(SRC_DIR
     "src/main.cpp"
@@ -14,7 +15,7 @@ set(SRC_DIR
     "src/systems/inputsystem.cpp"
     "src/renderer/camera.cpp"
     "src/renderer/shader.cpp"
-    "src/objects/texture.cpp"
+    "src/objects/mesh.cpp"
 )
 
 add_executable(OpenCore ${SRC_DIR})

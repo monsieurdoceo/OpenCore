@@ -284,6 +284,9 @@ OpenCore_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OpenCore_SOURCE_DIR:STATIC=/home/monsieurdoceo/Core/Codes/C++/OpenCore
 
+//The directory containing a CMake configuration file for assimp.
+assimp_DIR:PATH=/usr/lib/cmake/assimp-6.0
+
 //The directory containing a CMake configuration file for glfw3.
 glfw3_DIR:PATH=/usr/lib/cmake/glfw3
 
