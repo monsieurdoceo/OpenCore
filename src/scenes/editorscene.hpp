@@ -3,7 +3,6 @@
 
 #include "scene.hpp"
 #include "../renderer/shader.hpp"
-#include "../objects/texture.hpp"
 #include "../renderer/camera.hpp"
 #include "../renderer/window.hpp"
 
@@ -19,9 +18,6 @@ class EditorScene : public Scene
 private:
     Shader m_shader;
     Shader m_lightSourceShader;
-
-    Texture m_texture;
-    Texture m_specularTexture;
 
     unsigned int m_VAO;
     unsigned int m_VBO;

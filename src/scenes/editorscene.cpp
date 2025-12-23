@@ -2,9 +2,7 @@
 
 EditorScene::EditorScene() 
     : m_shader("../res/shaders/vertex.vs", "../res/shaders/fragment.fs"),
-      m_lightSourceShader("../res/shaders/lightVertex.vs", "../res/shaders/lightFragment.fs"),
-      m_texture("../res/textures/container2.png", true, false),
-	  m_specularTexture("../res/textures/container2_specular.png", true, false)
+      m_lightSourceShader("../res/shaders/lightVertex.vs", "../res/shaders/lightFragment.fs")
 {	
     m_cubePositions = 
     {
@@ -144,10 +142,7 @@ void EditorScene::render()
     m_shader.use();
     m_shader.setMat4("projection", projection);	
 	m_shader.setMat4("view", view);
-    m_shader.setVec3("viewPos", camera.getPosition());
-		
-	m_texture.use(GL_TEXTURE0);
-	m_specularTexture.use(GL_TEXTURE1);
+    m_shader.setVec3("viewPos", camera.getPosition());	
 		
 	// Draw the element
 	glBindVertexArray(m_VAO);

@@ -12,7 +12,6 @@
 #include <memory>
 
 #include "shader.hpp"
-#include "../objects/texture.hpp"
 #include "camera.hpp"
 #include "../systems/inputsystem.hpp"
 #include "../scenes/scene.hpp"

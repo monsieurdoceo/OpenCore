@@ -190,30 +190,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/objects/texture.o: src/objects/texture.cpp.o
-.PHONY : src/objects/texture.o
-
-# target to build an object file
-src/objects/texture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o
-.PHONY : src/objects/texture.cpp.o
-
-src/objects/texture.i: src/objects/texture.cpp.i
-.PHONY : src/objects/texture.i
-
-# target to preprocess a source file
-src/objects/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/objects/texture.cpp.i
-.PHONY : src/objects/texture.cpp.i
-
-src/objects/texture.s: src/objects/texture.cpp.s
-.PHONY : src/objects/texture.s
-
-# target to generate assembly for a file
-src/objects/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenCore.dir/build.make CMakeFiles/OpenCore.dir/src/objects/texture.cpp.s
-.PHONY : src/objects/texture.cpp.s
-
 src/renderer/camera.o: src/renderer/camera.cpp.o
 .PHONY : src/renderer/camera.o
 
@@ -350,9 +326,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/objects/texture.o"
-	@echo "... src/objects/texture.i"
-	@echo "... src/objects/texture.s"
 	@echo "... src/renderer/camera.o"
 	@echo "... src/renderer/camera.i"
 	@echo "... src/renderer/camera.s"

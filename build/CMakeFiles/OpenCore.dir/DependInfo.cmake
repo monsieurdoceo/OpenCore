@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/main.cpp" "CMakeFiles/OpenCore.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/main.cpp.o.d"
-  "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/objects/texture.cpp" "CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o.d"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.cpp" "CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o.d"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/shader.cpp" "CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o.d"
   "/home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/window.cpp" "CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o" "gcc" "CMakeFiles/OpenCore.dir/src/renderer/window.cpp.o.d"

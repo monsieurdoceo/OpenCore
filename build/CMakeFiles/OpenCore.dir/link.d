@@ -8,7 +8,6 @@ OpenCore: \
   CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o \
   CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o \
   CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o \
-  CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o \
   libglad.a \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/libGLX.so \
@@ -63,8 +62,6 @@ CMakeFiles/OpenCore.dir/src/systems/inputsystem.cpp.o:
 CMakeFiles/OpenCore.dir/src/renderer/camera.cpp.o:
 
 CMakeFiles/OpenCore.dir/src/renderer/shader.cpp.o:
-
-CMakeFiles/OpenCore.dir/src/objects/texture.cpp.o:
 
 libglad.a:
 

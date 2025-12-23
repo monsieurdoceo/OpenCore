@@ -358,7 +358,6 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../objects/texture.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/camera.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/renderer/../systems/inputsystem.hpp \
  /usr/include/c++/15.2.1/algorithm \
@@ -372,6 +371,5 @@ CMakeFiles/OpenCore.dir/src/main.cpp.o: \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/editorscene.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/scene.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/shader.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../objects/texture.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/camera.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/window.hpp

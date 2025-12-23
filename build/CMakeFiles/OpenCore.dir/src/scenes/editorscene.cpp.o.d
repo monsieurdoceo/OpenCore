@@ -329,7 +329,6 @@ CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o: \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
  /usr/include/c++/15.2.1/iostream \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../objects/texture.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/camera.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/matrix_transform.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/include/glm/gtc/../ext/matrix_projection.hpp \
@@ -366,7 +365,6 @@ CMakeFiles/OpenCore.dir/src/scenes/editorscene.cpp.o: \
  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/15.2.1/pstl/execution_defs.h \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/shader.hpp \
- /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/../objects/texture.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/camera.hpp \
  /home/monsieurdoceo/Core/Codes/C++/OpenCore/src/scenes/../renderer/../systems/inputsystem.hpp \
  /usr/include/c++/15.2.1/algorithm \
